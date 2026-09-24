@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NutriCare | Blog</title>
+
+    <meta
+        name="description"
+        content="Explore nutrition tips, healthy recipes, wellness advice and expert insights from NutriCare."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- SAME GLOBAL CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- BLOG PAGE CSS -->
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         SCROLL PROGRESS
+    ====================================================== -->
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+   <header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link ">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+
+                </div>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-nav-divider"></div>
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+
+</header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             BLOG HERO
+        ================================================== -->
+
+        <section class="blog-hero">
+
+            <div class="container blog-hero-grid">
+
+
+                <!-- LEFT IMAGE -->
+
+                <div class="blog-hero-image reveal">
+
+                    <div class="hero-image-frame">
+
+                        <img
+                            src="/assets/images/blogHero.jpg"
+                            alt="Healthy nutritious food"
+                        >
+
+                    </div>
+
+
+                    <!-- Floating Card -->
+
+                    <div class="hero-floating-card">
+
+                        <div class="floating-icon">
+
+                            <i data-lucide="sparkles"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Eat better
+                            </strong>
+
+                            <span>
+                                Live healthier
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT CONTENT -->
+
+                <div class="blog-hero-content reveal">
+
+                    <span class="section-eyebrow">
+
+                        <i data-lucide="book-open"></i>
+
+                        NutriCare Journal
+
+                    </span>
+
+
+                    <h1>
+
+                        Simple nutrition.
+                        <em>Real life.</em>
+
+                    </h1>
+
+
+                    <p>
+
+                        Discover practical nutrition advice,
+                        healthy recipes, wellness ideas and
+                        expert insights designed to help you
+                        make better choices every day.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#articles"
+                            class="btn btn-primary"
+                        >
+
+                            Explore Articles
+
+                            <i data-lucide="arrow-down"></i>
+
+                        </a>
+
+
+                        <a
+                            href="assessment.html"
+                            class="btn btn-outline"
+                        >
+
+                            Take Assessment
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Mini Stats -->
+
+                    <div class="hero-stats">
+
+                        <div>
+
+                            <strong>
+                                50+
+                            </strong>
+
+                            <span>
+                                Nutrition Guides
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                20+
+                            </strong>
+
+                            <span>
+                                Healthy Recipes
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                10K+
+                            </strong>
+
+                            <span>
+                                Readers
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BLOG INTRO
+        ================================================== -->
+
+        <section class="blog-intro">
+
+            <div class="container">
+
+                <div class="intro-heading reveal">
+
+                    <span class="section-eyebrow">
+                        Explore & Learn
+                    </span>
+
+                    <h2>
+                        Knowledge that makes
+                        healthy living easier.
+                    </h2>
+
+                    <p>
+                        No complicated rules. No unnecessary restrictions.
+                        Just useful nutrition knowledge you can apply
+                        to everyday life.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SEARCH + FILTER
+        ================================================== -->
+
+        <section
+            class="blog-controls"
+            id="articles"
+        >
+
+            <div class="container">
+
+
+                <!-- Search -->
+
+                <div class="blog-controls-top reveal">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            Latest Articles
+                        </span>
+
+                        <h2>
+                            Read. Learn. Grow.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="blog-search">
+
+                        <i data-lucide="search"></i>
+
+                        <input
+                            type="search"
+                            id="blogSearch"
+                            placeholder="Search articles..."
+                            aria-label="Search articles"
+                        >
+
+                        <button
+                            type="button"
+                            id="clearSearch"
+                            aria-label="Clear search"
+                        >
+
+                            <i data-lucide="x"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Categories -->
+
+                <div
+                    class="category-filter reveal"
+                    id="categoryFilter"
+                >
+
+                    <button
+                        type="button"
+                        class="category-btn active"
+                        data-category="all"
+                    >
+                        All
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="category-btn"
+                        data-category="nutrition"
+                    >
+                        Nutrition
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="category-btn"
+                        data-category="wellness"
+                    >
+                        Wellness
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="category-btn"
+                        data-category="recipes"
+                    >
+                        Recipes
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="category-btn"
+                        data-category="fitness"
+                    >
+                        Fitness
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="category-btn"
+                        data-category="healthy-living"
+                    >
+                        Healthy Living
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FEATURED ARTICLE
+        ================================================== -->
+
+        <section class="featured-section">
+
+            <div class="container">
+
+                <article class="featured-card reveal">
+
+
+                    <div class="featured-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
+                            alt="Balanced healthy meal"
+                            loading="lazy"
+                        >
+
+                        <span class="featured-label">
+                            Featured Article
+                        </span>
+
+                    </div>
+
+
+                    <div class="featured-content">
+
+                        <div class="article-meta">
+
+                            <span>
+                                Nutrition
+                            </span>
+
+                            <span>
+                                6 min read
+                            </span>
+
+                            <span>
+                                Sep 18, 2026
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            How to build a balanced plate
+                            without overthinking every meal
+                        </h2>
+
+
+                        <p>
+                            A healthy meal doesn't need to be complicated.
+                            Learn a simple approach to combine vegetables,
+                            protein, carbohydrates and healthy fats into
+                            meals that fit your everyday routine.
+                        </p>
+
+
+                        <a
+                            href="blog-details.html"
+                            class="article-read-link"
+                        >
+
+                            Read Full Article
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ARTICLES
+        ================================================== -->
+
+        <section class="articles-section">
+
+            <div class="container">
+
+                <div
+                    class="articles-grid"
+                    id="articlesGrid"
+                >
+
+
+                    <!-- CARD 1 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="nutrition"
+                        data-title="understanding protein and why your body needs it"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80"
+                                alt="Protein rich healthy food"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Nutrition
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    5 min read
+                                </span>
+
+                                <span>
+                                    Sep 15, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Understanding protein and
+                                why your body needs it
+                            </h3>
+
+
+                            <p>
+                                Learn simple ways to include
+                                enough protein in your everyday meals.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 2 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="recipes"
+                        data-title="healthy vegetarian breakfast ideas"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
+                                alt="Healthy vegetarian breakfast"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Recipes
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    7 min read
+                                </span>
+
+                                <span>
+                                    Sep 12, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                7 healthy vegetarian breakfast
+                                ideas for busy mornings
+                            </h3>
+
+
+                            <p>
+                                Easy and nutritious breakfast
+                                combinations for your busy routine.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 3 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="wellness"
+                        data-title="simple habits for better energy"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80"
+                                alt="Healthy food and vegetables"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Wellness
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    5 min read
+                                </span>
+
+                                <span>
+                                    Sep 09, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Simple habits for better
+                                energy throughout the day
+                            </h3>
+
+
+                            <p>
+                                Small lifestyle changes that can
+                                make healthy eating much easier.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 4 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="fitness"
+                        data-title="what to eat before and after your workout"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
+                                alt="Fitness workout"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Fitness
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    6 min read
+                                </span>
+
+                                <span>
+                                    Sep 05, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                What to eat before and
+                                after your workout
+                            </h3>
+
+
+                            <p>
+                                Understand how food timing can
+                                support your exercise routine.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 5 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="healthy-living"
+                        data-title="how to eat healthy with a busy schedule"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=800&q=80"
+                                alt="Healthy meal preparation"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Healthy Living
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    5 min read
+                                </span>
+
+                                <span>
+                                    Aug 30, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                How to eat healthy with
+                                a busy schedule
+                            </h3>
+
+
+                            <p>
+                                Practical strategies for eating
+                                well even during hectic weeks.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CARD 6 -->
+
+                    <article
+                        class="article-card reveal"
+                        data-category="wellness"
+                        data-title="hydration mistakes you should avoid"
+                    >
+
+                        <div class="article-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=800&q=80"
+                                alt="Drinking water"
+                                loading="lazy"
+                            >
+
+                            <span class="article-tag">
+                                Wellness
+                            </span>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+
+                                <span>
+                                    4 min read
+                                </span>
+
+                                <span>
+                                    Aug 26, 2026
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                6 hydration mistakes
+                                you should avoid
+                            </h3>
+
+
+                            <p>
+                                Simple ways to make hydration
+                                a natural part of your daily routine.
+                            </p>
+
+
+                            <a
+                                href="blog-details.html"
+                                class="article-link"
+                            >
+
+                                Read Article
+
+                                <i data-lucide="arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- NO RESULTS -->
+
+                <div
+                    class="no-results"
+                    id="noResults"
+                >
+
+                    <div class="no-results-icon">
+
+                        <i data-lucide="search-x"></i>
+
+                    </div>
+
+                    <h3>
+                        No articles found
+                    </h3>
+
+                    <p>
+                        Try another keyword or category.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="resetFilters"
+                    >
+                        Reset Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             NEWSLETTER
+        ================================================== -->
+
+        <section class="newsletter-section">
+
+            <div class="container">
+
+                <div class="newsletter-card reveal">
+
+
+                    <div class="newsletter-content">
+
+                        <span class="section-eyebrow">
+
+                            <i data-lucide="mail"></i>
+
+                            NutriCare Notes
+
+                        </span>
+
+
+                        <h2>
+                            Healthy ideas,
+                            <em>delivered to you.</em>
+                        </h2>
+
+
+                        <p>
+                            Get practical nutrition tips,
+                            healthy recipes and wellness
+                            insights directly in your inbox.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="newsletter-form"
+                        id="newsletterForm"
+                    >
+
+                        <div class="newsletter-input">
+
+                            <i data-lucide="mail"></i>
+
+                            <input
+                                type="email"
+                                id="newsletterEmail"
+                                placeholder="Your email address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+
+                            Subscribe
+
+                            <i data-lucide="arrow-right"></i>
+
+                        </button>
+
+
+                        <small>
+                            No spam. Unsubscribe anytime.
+                        </small>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="blog-cta">
+
+            <div class="container">
+
+                <div class="blog-cta-inner reveal">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            Ready to get started?
+                        </span>
+
+                        <h2>
+                            Turn nutrition knowledge
+                            into <em>real habits.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="assessment.html"
+                            class="btn btn-primary"
+                        >
+
+                            Start Assessment
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="booking.html"
+                            class="cta-link"
+                        >
+
+                            Talk to a Dietitian
+
+                            <i data-lucide="arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+
+                <p>Personalized nutrition guidance for healthier habits, better choices and a life that feels good.</p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i data-lucide="arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <i data-lucide="check-circle"></i>
+
+        <span id="toastMessage">
+            Done
+        </span>
+
+    </div>
+
+
+
+    <!-- GLOBAL JS -->
+
+    <script src="../assets/js/main.js"></script>
+
+    <!-- BLOG JS -->
+
+    <script src="../assets/js/blog.js"></script>
+
+</body>
+
+</html>

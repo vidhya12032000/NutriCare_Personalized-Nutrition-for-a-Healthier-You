@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NutriCare personalized meal plans with weekly meal structure, grocery guidance and practical recipe ideas."
+    >
+
+    <title>NutriCare | Personalized Meal Plans</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         LUCIDE ICONS
+    ====================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+
+    <!-- =====================================================
+         PAGE CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/meal-plans.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SCROLL PROGRESS
+========================================================= -->
+
+<div
+    class="scroll-progress"
+    id="scrollProgress"
+></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header
+    class="site-header"
+    id="siteHeader"
+>
+
+    <div class="container header-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="../index.html"
+            class="brand"
+        >
+
+            <span class="brand-mark">
+                <i data-lucide="leaf"></i>
+            </span>
+
+            <span class="brand-name">
+                Nutri<span>Care</span>
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav
+            class="desktop-nav"
+            aria-label="Primary Navigation"
+        >
+
+            <a
+                href="../index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="home2.html"
+                class="nav-link"
+            >
+                Home 2
+            </a>
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="services.html"
+                class="nav-link"
+            >
+                Services
+            </a>
+
+            <a
+                href="blog.html"
+                class="nav-link"
+            >
+                Blog
+            </a>
+
+            <a
+                href="contact.html"
+                class="nav-link"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+
+            <!-- THEME -->
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- RTL -->
+
+            <button
+                class="rtl-toggle"
+                id="rtlToggle"
+                aria-label="Toggle RTL"
+            >
+
+                <span class="rtl-label">
+                    RTL
+                </span>
+
+            </button>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile-wrapper">
+
+                <button
+                    class="profile-btn"
+                    id="profileButton"
+                    aria-label="Account menu"
+                >
+
+                    <i data-lucide="user-round"></i>
+
+                </button>
+
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                >
+
+                    <div class="profile-dropdown-head">
+
+                        <div class="profile-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Welcome to NutriCare
+                            </strong>
+
+                            <span>
+                                Start your wellness journey
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="login.html">
+
+                        <i data-lucide="log-in"></i>
+
+                        Login
+
+                    </a>
+
+
+                    <a href="signup.html">
+
+                        <i data-lucide="user-plus"></i>
+
+                        Create Account
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <div
+        class="mobile-nav"
+        id="mobileNav"
+    >
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="home2.html">
+            Home 2
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+        <div class="mobile-nav-divider"></div>
+
+
+        <a href="login.html">
+
+            <i data-lucide="log-in"></i>
+
+            Login
+
+        </a>
+
+
+        <a href="signup.html">
+
+            <i data-lucide="user-plus"></i>
+
+            Sign Up
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+
+<section class="meal-hero">
+
+    <div class="container meal-hero-grid">
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="meal-hero-content reveal">
+
+            <span class="section-label">
+                PERSONALIZED MEAL PLANNING
+            </span>
+
+
+            <h1>
+
+                Make your week
+
+                <em>
+                    easier to plan.
+                </em>
+
+            </h1>
+
+
+            <p>
+
+                Take the guesswork out of your meals with
+                practical weekly planning, grocery guidance
+                and recipe ideas built around your preferences.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="booking.html"
+                    class="btn btn-primary"
+                >
+
+                    Build My Meal Plan
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="#mealFeatures"
+                    class="hero-text-link"
+                >
+
+                    Explore the plan
+
+                    <i data-lucide="arrow-down"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- HERO TRUST -->
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+
+                    <span class="trust-icon">
+                        <i data-lucide="calendar-days"></i>
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Weekly structure
+                        </strong>
+
+                        <span>
+                            Less daily guesswork
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trust-item">
+
+                    <span class="trust-icon">
+                        <i data-lucide="shopping-basket"></i>
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Smart grocery guidance
+                        </strong>
+
+                        <span>
+                            Plan with purpose
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO IMAGE -->
+
+        <div class="meal-hero-visual reveal">
+
+            <div class="hero-image-wrap">
+
+                <img
+                    src="/assets/images/mealplan.jpg"
+                    alt="Healthy personalized meal planning"
+                >
+
+            </div>
+
+
+            <div class="floating-card floating-card-one">
+
+                <span class="floating-icon">
+
+                    <i data-lucide="calendar-check"></i>
+
+                </span>
+
+                <div>
+
+                    <strong>
+                        7-day structure
+                    </strong>
+
+                    <span>
+                        Planned around you
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card floating-card-two">
+
+                <span class="floating-icon">
+
+                    <i data-lucide="sparkles"></i>
+
+                </span>
+
+                <div>
+
+                    <strong>
+                        Flexible choices
+                    </strong>
+
+                    <span>
+                        Built for real life
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO / VALUE
+========================================================= -->
+
+<section
+    class="meal-intro section"
+    id="mealFeatures"
+>
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">
+                WHY MEAL PLANNING
+            </span>
+
+
+            <h2>
+
+                A clearer plan for
+
+                <em>
+                    everyday eating.
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Your meal plan is designed to bring structure
+                without making your week feel rigid.
+
+            </p>
+
+        </div>
+
+
+        <div class="meal-feature-grid">
+
+
+            <!-- FEATURE 01 -->
+
+            <article class="meal-feature-card reveal">
+
+                <span class="feature-number">
+                    01
+                </span>
+
+                <div class="feature-icon">
+
+                    <i data-lucide="calendar-days"></i>
+
+                </div>
+
+                <h3>
+                    Weekly Meal Structure
+                </h3>
+
+                <p>
+
+                    Create a practical rhythm for breakfast,
+                    lunch, dinner and snacks throughout your week.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Plan meals ahead
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Reduce daily decisions
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Keep your routine organized
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- FEATURE 02 -->
+
+            <article class="meal-feature-card reveal">
+
+                <span class="feature-number">
+                    02
+                </span>
+
+                <div class="feature-icon">
+
+                    <i data-lucide="shopping-basket"></i>
+
+                </div>
+
+                <h3>
+                    Smart Grocery Lists
+                </h3>
+
+                <p>
+
+                    Organize your grocery choices around
+                    the meals you actually plan to prepare.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Focused shopping
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Ingredient planning
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Less last-minute confusion
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- FEATURE 03 -->
+
+            <article class="meal-feature-card reveal">
+
+                <span class="feature-number">
+                    03
+                </span>
+
+                <div class="feature-icon">
+
+                    <i data-lucide="book-open"></i>
+
+                </div>
+
+                <h3>
+                    Recipe Suggestions
+                </h3>
+
+                <p>
+
+                    Keep practical meal ideas available
+                    so healthy eating feels more enjoyable.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Simple meal ideas
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Variety throughout the week
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Preference-friendly options
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- FEATURE 04 -->
+
+            <article class="meal-feature-card reveal">
+
+                <span class="feature-number">
+                    04
+                </span>
+
+                <div class="feature-icon">
+
+                    <i data-lucide="repeat"></i>
+
+                </div>
+
+                <h3>
+                    Flexible Planning
+                </h3>
+
+                <p>
+
+                    Your week can change. Your meal structure
+                    should be flexible enough to change with it.
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Adapt to busy days
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Swap meal ideas
+
+                    </li>
+
+                    <li>
+
+                        <i data-lucide="check"></i>
+
+                        Adjust around preferences
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SAMPLE WEEK
+========================================================= -->
+
+<section class="sample-week section">
+
+    <div class="container">
+
+
+        <div class="sample-week-heading reveal">
+
+            <div>
+
+                <span class="section-label">
+                    SAMPLE WEEK
+                </span>
+
+                <h2>
+
+                    See how your
+
+                    <em>
+                        week can flow.
+                    </em>
+
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                A sample structure helps you visualize how
+                meals can be organized across a normal week.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="week-plan reveal">
+
+
+            <!-- MONDAY -->
+
+            <article class="day-card">
+
+                <div class="day-top">
+
+                    <span>
+                        MON
+                    </span>
+
+                    <i data-lucide="sun"></i>
+
+                </div>
+
+                <h3>
+                    Fresh Start
+                </h3>
+
+                <div class="day-meal">
+
+                    <span>
+                        Breakfast
+                    </span>
+
+                    <strong>
+                        Oats & fruit
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Lunch
+                    </span>
+
+                    <strong>
+                        Veggie grain bowl
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Dinner
+                    </span>
+
+                    <strong>
+                        Paneer & vegetables
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- TUESDAY -->
+
+            <article class="day-card">
+
+                <div class="day-top">
+
+                    <span>
+                        TUE
+                    </span>
+
+                    <i data-lucide="cloud-sun"></i>
+
+                </div>
+
+                <h3>
+                    Balanced Day
+                </h3>
+
+                <div class="day-meal">
+
+                    <span>
+                        Breakfast
+                    </span>
+
+                    <strong>
+                        Idli & sambar
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Lunch
+                    </span>
+
+                    <strong>
+                        Rice & dal bowl
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Dinner
+                    </span>
+
+                    <strong>
+                        Roti & mixed vegetables
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WEDNESDAY -->
+
+            <article class="day-card featured-day">
+
+                <div class="day-top">
+
+                    <span>
+                        WED
+                    </span>
+
+                    <i data-lucide="sparkles"></i>
+
+                </div>
+
+                <h3>
+                    Midweek Fuel
+                </h3>
+
+                <div class="day-meal">
+
+                    <span>
+                        Breakfast
+                    </span>
+
+                    <strong>
+                        Smoothie bowl
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Lunch
+                    </span>
+
+                    <strong>
+                        Chickpea salad
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Dinner
+                    </span>
+
+                    <strong>
+                        Vegetable dosa
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- THURSDAY -->
+
+            <article class="day-card">
+
+                <div class="day-top">
+
+                    <span>
+                        THU
+                    </span>
+
+                    <i data-lucide="leaf"></i>
+
+                </div>
+
+                <h3>
+                    Simple & Green
+                </h3>
+
+                <div class="day-meal">
+
+                    <span>
+                        Breakfast
+                    </span>
+
+                    <strong>
+                        Vegetable upma
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Lunch
+                    </span>
+
+                    <strong>
+                        Millet vegetable bowl
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Dinner
+                    </span>
+
+                    <strong>
+                        Tofu stir-fry
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- FRIDAY -->
+
+            <article class="day-card">
+
+                <div class="day-top">
+
+                    <span>
+                        FRI
+                    </span>
+
+                    <i data-lucide="heart"></i>
+
+                </div>
+
+                <h3>
+                    Feel Good
+                </h3>
+
+                <div class="day-meal">
+
+                    <span>
+                        Breakfast
+                    </span>
+
+                    <strong>
+                        Fruit & yogurt
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Lunch
+                    </span>
+
+                    <strong>
+                        Vegetable pulao
+                    </strong>
+
+                </div>
+
+                <div class="day-meal">
+
+                    <span>
+                        Dinner
+                    </span>
+
+                    <strong>
+                        Paneer wrap
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section class="meal-process section">
+
+    <div class="container">
+
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+
+                From preferences to
+
+                <em>
+                    a practical week.
+                </em>
+
+            </h2>
+
+            <p>
+
+                A simple process keeps your meal planning
+                clear, useful and adaptable.
+
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <article class="process-card reveal">
+
+                <span class="process-number">
+                    01
+                </span>
+
+                <div class="process-icon">
+
+                    <i data-lucide="clipboard-list"></i>
+
+                </div>
+
+                <h3>
+                    Share your preferences
+                </h3>
+
+                <p>
+
+                    Tell us about your schedule, food preferences,
+                    meal habits and planning challenges.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card reveal">
+
+                <span class="process-number">
+                    02
+                </span>
+
+                <div class="process-icon">
+
+                    <i data-lucide="calendar-days"></i>
+
+                </div>
+
+                <h3>
+                    Build your week
+                </h3>
+
+                <p>
+
+                    Organize meal ideas and grocery guidance
+                    around your real weekly routine.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card reveal">
+
+                <span class="process-number">
+                    03
+                </span>
+
+                <div class="process-icon">
+
+                    <i data-lucide="utensils"></i>
+
+                </div>
+
+                <h3>
+                    Use & adapt
+                </h3>
+
+                <p>
+
+                    Follow the structure while making sensible
+                    adjustments when your schedule changes.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="process-card reveal">
+
+                <span class="process-number">
+                    04
+                </span>
+
+                <div class="process-icon">
+
+                    <i data-lucide="refresh-cw"></i>
+
+                </div>
+
+                <h3>
+                    Review & refine
+                </h3>
+
+                <p>
+
+                    Refine the structure based on your experience,
+                    preferences and changing routine.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MEAL TYPES
+========================================================= -->
+
+<section class="meal-types section">
+
+    <div class="container">
+
+
+        <div class="meal-types-layout">
+
+
+            <!-- CONTENT -->
+
+            <div class="meal-types-content reveal">
+
+                <span class="section-label">
+                    BUILT AROUND YOUR ROUTINE
+                </span>
+
+
+                <h2>
+
+                    More structure.
+
+                    <em>
+                        Less stress.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Meal planning does not have to mean eating
+                    the same thing every day. A flexible structure
+                    gives you room to make choices while keeping
+                    your week organized.
+
+                </p>
+
+
+                <div class="type-list">
+
+                    <div class="type-item">
+
+                        <span>
+                            <i data-lucide="coffee"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Breakfast ideas
+                            </strong>
+
+                            <p>
+                                Start the day with practical choices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="type-item">
+
+                        <span>
+                            <i data-lucide="salad"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Lunch planning
+                            </strong>
+
+                            <p>
+                                Keep midday meals simple and organized.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="type-item">
+
+                        <span>
+                            <i data-lucide="utensils"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Dinner ideas
+                            </strong>
+
+                            <p>
+                                Create satisfying options for the evening.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="type-item">
+
+                        <span>
+                            <i data-lucide="apple"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Snack options
+                            </strong>
+
+                            <p>
+                                Keep useful choices available between meals.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMAGE -->
+
+            <div class="meal-types-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1000&q=88"
+                    alt="Healthy meal ingredients"
+                    loading="lazy"
+                >
+
+
+                <div class="image-caption">
+
+                    <i data-lucide="sparkles"></i>
+
+                    <span>
+                        Personalized by design
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="meal-faq section">
+
+    <div class="container faq-layout">
+
+
+        <!-- FAQ INTRO -->
+
+        <div class="faq-intro reveal">
+
+            <span class="section-label">
+                COMMON QUESTIONS
+            </span>
+
+
+            <h2>
+
+                Questions about
+
+                <em>
+                    meal plans?
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Here are a few common questions about
+                personalized meal planning.
+
+            </p>
+
+
+            <a
+                href="contact.html"
+                class="text-link"
+            >
+
+                Ask us anything
+
+                <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- FAQ LIST -->
+
+        <div class="meal-faq-list reveal">
+
+
+            <div class="meal-faq-item active">
+
+                <button
+                    class="meal-faq-question"
+                    type="button"
+                    aria-expanded="true"
+                >
+
+                    <span>
+                        Are the meal plans personalized?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+
+                <div class="meal-faq-answer">
+
+                    <p>
+
+                        Yes. Personalized meal planning can be
+                        structured around your preferences,
+                        schedule and goals.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="meal-faq-item">
+
+                <button
+                    class="meal-faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Can I change meals during the week?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+
+                <div class="meal-faq-answer">
+
+                    <p>
+
+                        Yes. The plan is designed to be flexible,
+                        so meal ideas can be adjusted when your
+                        schedule or preferences change.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="meal-faq-item">
+
+                <button
+                    class="meal-faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Does the plan include grocery guidance?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+
+                <div class="meal-faq-answer">
+
+                    <p>
+
+                        Grocery guidance is included as part of
+                        the meal-planning structure to make weekly
+                        shopping more organized.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="meal-faq-item">
+
+                <button
+                    class="meal-faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Can recipes match my preferences?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+
+                <div class="meal-faq-answer">
+
+                    <p>
+
+                        Recipe suggestions can be selected around
+                        the preferences and routine you share.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="meal-faq-item">
+
+                <button
+                    class="meal-faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        How do I get started?
+                    </span>
+
+                    <i data-lucide="plus"></i>
+
+                </button>
+
+
+                <div class="meal-faq-answer">
+
+                    <p>
+
+                        Start by booking a consultation or contacting
+                        NutriCare to discuss your meal-planning needs.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="meal-cta section">
+
+    <div class="container">
+
+        <div class="meal-cta-card reveal">
+
+
+            <div class="cta-decoration cta-decoration-one"></div>
+
+            <div class="cta-decoration cta-decoration-two"></div>
+
+
+            <div class="meal-cta-content">
+
+                <span class="section-label">
+                    READY TO PLAN?
+                </span>
+
+
+                <h2>
+
+                    Make your meals
+
+                    <em>
+                        easier this week.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Start with your preferences, schedule and goals.
+                    Build a meal structure that feels practical
+                    for your everyday life.
+
+                </p>
+
+
+                <div class="cta-actions">
+
+                    <a
+                        href="booking.html"
+                        class="btn btn-primary"
+                    >
+
+                        Start My Meal Plan
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="services.html"
+                        class="btn btn-outline-light"
+                    >
+
+                        View Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="cta-icon">
+
+                <i data-lucide="calendar-heart"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="brand footer-logo"
+                >
+
+                    <span class="brand-mark">
+                        <i data-lucide="leaf"></i>
+                    </span>
+
+                    <span class="brand-name">
+                        Nutri<span>Care</span>
+                    </span>
+
+                </a>
+
+
+                <p>
+
+                    Personalized nutrition guidance for healthier
+                    habits, better choices and a life that feels good.
+
+                </p>
+
+
+                <div class="social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i data-lucide="instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+                        <i data-lucide="facebook"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                    >
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="dietitians.html">
+                    Dietitians
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Resources
+                </h4>
+
+                <a href="meal-plans.html">
+                    Meal Plans
+                </a>
+
+                <a href="recipes.html">
+                    Recipes
+                </a>
+
+                <a href="assessment.html">
+                    Health Assessment
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="booking.html">
+                    Book Consultation
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="mailto:hello@nutricare.com">
+                    hello@nutricare.com
+                </a>
+
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+
+                <span>
+                    Chennai, India
+                </span>
+
+                <span>
+                    Mon – Sat · 9:00 AM – 6:00 PM
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NutriCare. All rights reserved.
+            </span>
+
+            <div>
+
+                <a href="privacy-policy.html">
+                    Privacy
+                </a>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+>
+
+    <i data-lucide="arrow-up"></i>
+
+</button>
+
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+
+    <i data-lucide="check-circle"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+
+<!-- =========================================================
+     GLOBAL JS
+========================================================= -->
+
+<script src="../assets/js/main.js"></script>
+
+
+<!-- =========================================================
+     PAGE JS
+========================================================= -->
+
+<script src="../assets/js/meal-plans.js"></script>
+
+
+</body>
+
+</html>

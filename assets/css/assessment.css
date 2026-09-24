@@ -1,0 +1,1137 @@
+/* =========================================================
+   NUTRICARE
+   HEALTH ASSESSMENT PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.assessment-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 105px 0 85px;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(47, 125, 104, .13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(232, 173, 103, .10),
+            transparent 28%
+        ),
+        var(--bg);
+}
+
+
+.assessment-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.assessment-hero h1 {
+    margin: 18px 0 22px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -2px;
+    color: var(--text);
+}
+
+
+.assessment-hero h1 em {
+    display: block;
+    color: var(--primary);
+}
+
+
+.assessment-hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   HERO META
+========================================================= */
+
+.assessment-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+
+.assessment-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--card-bg);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.assessment-meta svg {
+    width: 15px;
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   ORBS
+========================================================= */
+
+.assessment-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+.orb-one {
+    width: 350px;
+    height: 350px;
+    top: -190px;
+    left: -150px;
+    background: rgba(47, 125, 104, .07);
+}
+
+
+.orb-two {
+    width: 260px;
+    height: 260px;
+    right: -100px;
+    bottom: -130px;
+    background: rgba(232, 173, 103, .07);
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.assessment-main {
+    padding-top: 75px;
+    background: var(--section-bg, var(--bg));
+}
+
+
+.assessment-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: start;
+    gap: 30px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.assessment-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+
+.progress-card {
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--card-bg);
+}
+
+
+.progress-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+
+.progress-top span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+
+.progress-top strong {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+
+.progress-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--primary-light);
+}
+
+
+.progress-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary);
+    transition: width .4s ease;
+}
+
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.assessment-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+
+.assessment-step {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    transition: all .25s ease;
+}
+
+
+.assessment-step:hover {
+    background: var(--card-bg);
+}
+
+
+.assessment-step.active {
+    border-color: var(--border);
+    background: var(--card-bg);
+    box-shadow: 0 8px 25px rgba(30, 70, 57, .05);
+}
+
+
+.step-number {
+    display: grid;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.assessment-step.active .step-number {
+    background: var(--primary);
+    color: #fff;
+}
+
+
+.step-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.step-info strong {
+    font-size: 12px;
+    color: var(--text);
+}
+
+
+.step-info small {
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   SIDEBAR NOTE
+========================================================= */
+
+.sidebar-note {
+    display: flex;
+    gap: 11px;
+    margin-top: 20px;
+    padding: 17px;
+    border-radius: 17px;
+    background: var(--primary-light);
+}
+
+
+.sidebar-note > svg {
+    width: 18px;
+    min-width: 18px;
+    color: var(--primary);
+}
+
+
+.sidebar-note strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: var(--text);
+}
+
+
+.sidebar-note p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.assessment-form-card {
+    min-width: 0;
+    padding: 42px;
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    background: var(--card-bg);
+    box-shadow: 0 20px 60px rgba(27, 62, 51, .06);
+}
+
+
+.assessment-panel {
+    display: none;
+}
+
+
+.assessment-panel.active {
+    display: block;
+    animation: panelFade .35s ease;
+}
+
+
+@keyframes panelFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   PANEL HEADING
+========================================================= */
+
+.panel-heading {
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+
+.panel-kicker {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: var(--primary);
+}
+
+
+.panel-heading h2 {
+    margin: 10px 0 9px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.1;
+    color: var(--text);
+}
+
+
+.panel-heading p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+}
+
+
+.form-field {
+    min-width: 0;
+}
+
+
+.form-field.full {
+    grid-column: 1 / -1;
+}
+
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+
+.form-field label span {
+    color: #c35f55;
+}
+
+
+.form-field input:not([type="radio"]):not([type="checkbox"]),
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    outline: none;
+    background: var(--bg);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 13px;
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.form-field input:not([type="radio"]):not([type="checkbox"]),
+.form-field select {
+    height: 48px;
+    padding: 0 14px;
+}
+
+
+.form-field textarea {
+    min-height: 110px;
+    padding: 13px 14px;
+    resize: vertical;
+}
+
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(47, 125, 104, .08);
+}
+
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--text-muted);
+    opacity: .65;
+}
+
+
+.field-error {
+    display: block;
+    min-height: 16px;
+    margin-top: 5px;
+    color: #c35f55;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CHOICE CARDS
+========================================================= */
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+
+.choice-card {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+
+.choice-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.choice-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 92px;
+    padding: 17px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    background: var(--bg);
+    transition: all .25s ease;
+}
+
+
+.choice-card:hover .choice-content {
+    border-color: rgba(47, 125, 104, .4);
+}
+
+
+.choice-card input:checked + .choice-content {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    box-shadow: 0 8px 25px rgba(47, 125, 104, .08);
+}
+
+
+.choice-icon {
+    display: grid;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    place-items: center;
+    border-radius: 13px;
+    background: var(--card-bg);
+    color: var(--primary);
+}
+
+
+.choice-icon svg {
+    width: 19px;
+}
+
+
+.choice-content strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+
+.choice-content small {
+    font-size: 10px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   INLINE OPTIONS
+========================================================= */
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+
+.inline-options label,
+.number-options label {
+    cursor: pointer;
+}
+
+
+.inline-options input,
+.number-options input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.inline-options span {
+    display: block;
+    padding: 11px 16px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--bg);
+    font-size: 11px;
+    color: var(--text-muted);
+    transition: all .25s ease;
+}
+
+
+.inline-options input:checked + span {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   NUMBER OPTIONS
+========================================================= */
+
+.number-options {
+    display: flex;
+    gap: 10px;
+}
+
+
+.number-options span {
+    display: grid;
+    width: 52px;
+    height: 45px;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 12px;
+    transition: all .25s ease;
+}
+
+
+.number-options input:checked + span {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+
+
+/* =========================================================
+   ACTIVITY
+========================================================= */
+
+.activity-options {
+    display: grid;
+    gap: 12px;
+}
+
+
+.activity-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--bg);
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+
+.activity-card:hover {
+    border-color: rgba(47, 125, 104, .4);
+}
+
+
+.activity-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.activity-card > span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+
+.activity-card strong {
+    font-size: 13px;
+    color: var(--text);
+}
+
+
+.activity-card small {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+
+.activity-card > svg {
+    width: 21px;
+    color: var(--primary);
+}
+
+
+.activity-card:has(input:checked) {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+
+
+.activity-extra {
+    max-width: 400px;
+    margin-top: 24px;
+}
+
+
+/* =========================================================
+   SUPPORT
+========================================================= */
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+
+.support-card {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.support-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.support-card > span {
+    display: flex;
+    flex-direction: column;
+    min-height: 145px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    background: var(--bg);
+    transition: all .25s ease;
+}
+
+
+.support-card svg {
+    width: 21px;
+    margin-bottom: 22px;
+    color: var(--primary);
+}
+
+
+.support-card strong {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+
+.support-card small {
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+
+.support-card input:checked + span {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+
+
+/* =========================================================
+   REVIEW
+========================================================= */
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.review-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 20px;
+    padding: 15px 17px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    background: var(--bg);
+}
+
+
+.review-item strong {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+
+.review-item span {
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+.consent-box {
+    margin-top: 25px;
+    padding: 17px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--primary-light);
+}
+
+
+.consent-box label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.consent-box input {
+    margin-top: 3px;
+    accent-color: var(--primary);
+}
+
+
+.consent-box span {
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--text);
+}
+
+
+/* =========================================================
+   FORM NAVIGATION
+========================================================= */
+
+.form-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+}
+
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn-back svg {
+    width: 15px;
+}
+
+
+.btn-back:hover {
+    background: var(--bg);
+}
+
+
+.navigation-note {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+
+#submitAssessment {
+    display: none;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.assessment-success {
+    display: none;
+    padding: 90px 0;
+    background: var(--bg);
+}
+
+
+.assessment-success.show {
+    display: block;
+    animation: panelFade .45s ease;
+}
+
+
+.success-card {
+    max-width: 700px;
+    margin: auto;
+    padding: 65px 40px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--card-bg);
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(25, 60, 49, .08);
+}
+
+
+.success-icon {
+    display: grid;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+
+.success-icon svg {
+    width: 30px;
+}
+
+
+.success-card h2 {
+    margin: 15px 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 55px);
+    line-height: 1.05;
+    color: var(--text);
+}
+
+
+.success-card h2 em {
+    color: var(--primary);
+}
+
+
+.success-card > p {
+    max-width: 540px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   INVALID FIELD
+========================================================= */
+
+.invalid {
+    border-color: #c35f55 !important;
+}
+
+
+.choice-invalid .choice-content,
+.activity-invalid,
+.support-invalid {
+    border-color: #c35f55 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .assessment-layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+
+    .assessment-form-card {
+        padding: 32px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .assessment-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .assessment-sidebar {
+        position: static;
+    }
+
+
+    .assessment-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .assessment-step {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .step-info small {
+        display: none;
+    }
+
+
+    .sidebar-note {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .assessment-hero {
+        padding: 70px 0 60px;
+    }
+
+
+    .assessment-hero h1 {
+        font-size: 45px;
+        letter-spacing: -1px;
+    }
+
+
+    .assessment-meta {
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .assessment-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .assessment-form-card {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+
+    .form-grid,
+    .choice-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-field.full {
+        grid-column: auto;
+    }
+
+
+    .form-navigation {
+        flex-wrap: wrap;
+    }
+
+
+    .navigation-note {
+        order: -1;
+        flex-basis: 100%;
+    }
+
+
+    .review-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+
+    .success-card {
+        padding: 45px 24px;
+    }
+
+
+    .success-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .assessment-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .assessment-step {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+
+    .assessment-hero h1 {
+        font-size: 39px;
+    }
+
+
+    .inline-options {
+        flex-direction: column;
+    }
+
+
+    .number-options {
+        flex-wrap: wrap;
+    }
+
+}

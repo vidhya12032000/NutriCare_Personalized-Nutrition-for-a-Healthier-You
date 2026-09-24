@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NutriCare | Meet Your Trainers &amp; Transformations</title>
+
+    <meta
+        name="description"
+        content="Meet the NutriCare coaching team, see real client transformations and explore programs built around your goals."
+    >
+
+    <meta name="author" content="NutriCare">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main CSS (shared brand system) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Home 2 CSS -->
+    <link rel="stylesheet" href="../assets/css/home2.css">
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     HEADER (shared)
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link active">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+
+                </div>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-nav-divider"></div>
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO 2 — full-bleed coach photo, headline over image
+========================================================= -->
+
+<section class="h2-hero">
+
+    <div class="h2-hero-media">
+        <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=85"
+            alt="NutriCare trainer coaching a client"
+        >
+        <div class="h2-hero-scrim"></div>
+    </div>
+
+    <div class="container h2-hero-inner">
+
+        <p class="h2-kicker">Coached by people, not an app</p>
+
+        <h1 class="h2-hero-title">
+            Real trainers. Real plates.<br>
+            Progress you can see in the mirror.
+        </h1>
+
+        <p class="h2-hero-sub">
+            Every NutriCare member is paired with a dietitian and a trainer
+            who read your weekly numbers before they write your next plan.
+        </p>
+
+        <div class="h2-hero-actions">
+            <a href="assessment.html" class="btn btn-primary">
+                Get matched with a trainer
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+            <button class="h2-play-btn" id="h2PlayBtn" type="button">
+                <span class="h2-play-icon"><i data-lucide="play"></i></span>
+                See how coaching works
+            </button>
+        </div>
+
+    </div>
+
+    <div class="h2-hero-stats">
+
+        <div class="h2-stat">
+            <strong><span class="counter" data-target="1200">0</span>+</strong>
+            <span>Transformations logged</span>
+        </div>
+
+        <div class="h2-stat">
+            <strong><span class="counter" data-target="25">0</span></strong>
+            <span>Certified coaches</span>
+        </div>
+
+        <div class="h2-stat">
+            <strong><span class="counter" data-target="14">0</span> wks</strong>
+            <span>Avg. first-result window</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CREDENTIAL MARQUEE
+========================================================= -->
+
+<section class="h2-marquee-section">
+
+    <div class="h2-marquee" aria-hidden="true">
+
+        <div class="h2-marquee-track">
+            <span>ISSA Certified</span>
+            <span>•</span>
+            <span>Registered Dietitians</span>
+            <span>•</span>
+            <span>Precision Nutrition L1</span>
+            <span>•</span>
+            <span>NASM-CPT</span>
+            <span>•</span>
+            <span>Sports Nutrition Certified</span>
+            <span>•</span>
+            <span>ISSA Certified</span>
+            <span>•</span>
+            <span>Registered Dietitians</span>
+            <span>•</span>
+            <span>Precision Nutrition L1</span>
+            <span>•</span>
+            <span>NASM-CPT</span>
+            <span>•</span>
+            <span>Sports Nutrition Certified</span>
+            <span>•</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TRAINER SPOTLIGHT — interactive switcher
+========================================================= -->
+
+<section class="h2-trainers section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-label">Trainer Spotlight</span>
+            <h2>Pick a coach, not just a plan.</h2>
+            <p>Tap a name. Their profile, focus areas and current client load load instantly below.</p>
+        </div>
+
+        <div class="h2-trainer-panel reveal">
+
+            <div class="h2-trainer-list" id="h2TrainerList">
+
+                <button class="h2-trainer-tab active" data-trainer="0">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80" alt="">
+                    <span>Dr. Maya Patel</span>
+                </button>
+
+                <button class="h2-trainer-tab" data-trainer="1">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80" alt="">
+                    <span>Dr. Arjun Mehta</span>
+                </button>
+
+                <button class="h2-trainer-tab" data-trainer="2">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&q=80" alt="">
+                    <span>Dr. Ananya Sharma</span>
+                </button>
+
+                <button class="h2-trainer-tab" data-trainer="3">
+                    <img src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?w=200&q=80" alt="">
+                    <span>Coach Vikram Iyer</span>
+                </button>
+
+            </div>
+
+            <div class="h2-trainer-detail" id="h2TrainerDetail">
+
+                <!-- Slide 0 -->
+                <article class="h2-trainer-slide active" data-slide="0">
+                    <div class="h2-trainer-photo">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=700&q=85" alt="Dr. Maya Patel">
+                    </div>
+                    <div class="h2-trainer-info">
+                        <span class="h2-trainer-role">Sports Nutritionist</span>
+                        <h3>Dr. Maya Patel</h3>
+                        <p>Works with amateur marathoners and weekend athletes on fuelling for performance, not just weight. Known for blunt, practical feedback.</p>
+                        <div class="h2-trainer-meta">
+                            <div><strong>9 yrs</strong><span>Experience</span></div>
+                            <div><strong>4.8</strong><span>Client rating</span></div>
+                            <div><strong>3 slots</strong><span>Open this month</span></div>
+                        </div>
+                        <a href="dietitian-details.html" class="text-link">View full profile <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Slide 1 -->
+                <article class="h2-trainer-slide" data-slide="1">
+                    <div class="h2-trainer-photo">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=85" alt="Dr. Arjun Mehta">
+                    </div>
+                    <div class="h2-trainer-info">
+                        <span class="h2-trainer-role">Lifestyle Nutritionist</span>
+                        <h3>Dr. Arjun Mehta</h3>
+                        <p>Specializes in fitting real nutrition into chaotic work schedules — shift workers, frequent travellers and new parents.</p>
+                        <div class="h2-trainer-meta">
+                            <div><strong>6 yrs</strong><span>Experience</span></div>
+                            <div><strong>4.9</strong><span>Client rating</span></div>
+                            <div><strong>Full</strong><span>Waitlist open</span></div>
+                        </div>
+                        <a href="dietitian-details.html" class="text-link">View full profile <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="h2-trainer-slide" data-slide="2">
+                    <div class="h2-trainer-photo">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=85" alt="Dr. Ananya Sharma">
+                    </div>
+                    <div class="h2-trainer-info">
+                        <span class="h2-trainer-role">Clinical Nutritionist</span>
+                        <h3>Dr. Ananya Sharma</h3>
+                        <p>Coordinates nutrition plans alongside existing medical care for clients managing weight alongside a diagnosed condition.</p>
+                        <div class="h2-trainer-meta">
+                            <div><strong>11 yrs</strong><span>Experience</span></div>
+                            <div><strong>4.9</strong><span>Client rating</span></div>
+                            <div><strong>2 slots</strong><span>Open this month</span></div>
+                        </div>
+                        <a href="dietitian-details.html" class="text-link">View full profile <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="h2-trainer-slide" data-slide="3">
+                    <div class="h2-trainer-photo">
+                        <img src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?w=700&q=85" alt="Coach Vikram Iyer">
+                    </div>
+                    <div class="h2-trainer-info">
+                        <span class="h2-trainer-role">Strength &amp; Conditioning</span>
+                        <h3>Coach Vikram Iyer</h3>
+                        <p>Pairs training splits with your dietitian's plan so lifting and eating windows actually line up, instead of fighting each other.</p>
+                        <div class="h2-trainer-meta">
+                            <div><strong>7 yrs</strong><span>Experience</span></div>
+                            <div><strong>4.7</strong><span>Client rating</span></div>
+                            <div><strong>5 slots</strong><span>Open this month</span></div>
+                        </div>
+                        <a href="dietitian-details.html" class="text-link">View full profile <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TRANSFORMATION — before / after drag slider
+========================================================= -->
+
+<section class="h2-transform section">
+
+    <div class="container">
+
+        <div class="split-heading reveal">
+            <div>
+                <span class="section-label">12-Week Result</span>
+                <h2>Drag the line. See the plan work.</h2>
+            </div>
+            <p>Rohit, 34 — Weight Management program, coached by Dr. Maya Patel.</p>
+        </div>
+
+        <div class="h2-compare reveal" id="h2Compare">
+
+            <div class="h2-compare-after">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=85" alt="After 12 weeks">
+                <span class="h2-compare-tag h2-tag-after">Week 12</span>
+            </div>
+
+            <div class="h2-compare-before" id="h2CompareBefore">
+                <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=1200&q=85" alt="Before starting the program">
+                <span class="h2-compare-tag h2-tag-before">Week 0</span>
+            </div>
+
+            <div class="h2-compare-handle" id="h2CompareHandle">
+                <i data-lucide="move-horizontal"></i>
+            </div>
+
+        </div>
+
+        <div class="h2-compare-stats reveal">
+            <span><i data-lucide="trending-down"></i> -8.4 kg body weight</span>
+            <span><i data-lucide="flame"></i> Resting metabolism +6%</span>
+            <span><i data-lucide="check-circle"></i> Zero crash diets</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROGRAMS — image-switching tabs
+========================================================= -->
+
+<section class="h2-programs section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-label">Find Your Lane</span>
+            <h2>One coaching style rarely fits everyone.</h2>
+        </div>
+
+        <div class="h2-program-wrap reveal">
+
+            <div class="h2-program-tabs" id="h2ProgramTabs">
+
+                <button class="h2-program-tab active" data-program="0">
+                    <i data-lucide="scale"></i>
+                    <span>Weight Management</span>
+                </button>
+
+                <button class="h2-program-tab" data-program="1">
+                    <i data-lucide="dumbbell"></i>
+                    <span>Muscle Building</span>
+                </button>
+
+                <button class="h2-program-tab" data-program="2">
+                    <i data-lucide="activity"></i>
+                    <span>Sports Performance</span>
+                </button>
+
+                <button class="h2-program-tab" data-program="3">
+                    <i data-lucide="users"></i>
+                    <span>Family Nutrition</span>
+                </button>
+
+            </div>
+
+            <div class="h2-program-stage">
+
+                <div class="h2-program-panel active" data-panel="0">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&q=85" alt="Weight management meal">
+                    <div class="h2-program-copy">
+                        <h3>Weight Management</h3>
+                        <p>Weekly weigh-ins reviewed by your dietitian, adjusted portions instead of new restrictions every time progress stalls.</p>
+                        <a href="service-details.html" class="text-link">See how it's structured <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="h2-program-panel" data-panel="1">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=85" alt="High protein muscle building meal">
+                    <div class="h2-program-copy">
+                        <h3>Muscle Building</h3>
+                        <p>Protein and calorie targets synced to your lifting split, recalculated every 4 weeks as your numbers move.</p>
+                        <a href="service-details.html" class="text-link">See how it's structured <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="h2-program-panel" data-panel="2">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=85" alt="Sports performance nutrition">
+                    <div class="h2-program-copy">
+                        <h3>Sports Performance</h3>
+                        <p>Race-day and match-day fuelling plans built around your actual training calendar, not a generic athlete template.</p>
+                        <a href="service-details.html" class="text-link">See how it's structured <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="h2-program-panel" data-panel="3">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=900&q=85" alt="Family nutrition meal">
+                    <div class="h2-program-copy">
+                        <h3>Family Nutrition</h3>
+                        <p>One grocery list, meals every age at the table will actually eat, and guidance that works around school and work hours.</p>
+                        <a href="service-details.html" class="text-link">See how it's structured <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA (reuses shared cta-card styling)
+========================================================= -->
+
+<section class="final-cta section">
+
+    <div class="container">
+
+        <div class="cta-card reveal">
+
+            <div class="cta-decoration decoration-one"></div>
+            <div class="cta-decoration decoration-two"></div>
+
+            <div class="cta-content">
+
+                <span class="section-label">Your Coach Is Waiting</span>
+
+                <h2>Ready to train with someone who reads your numbers?</h2>
+
+                <p>Two-minute assessment, then a real coach — not a chatbot — gets back to you within a day.</p>
+
+                <a href="assessment.html" class="btn btn-primary">
+                    Get matched with a trainer
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER (shared)
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+
+                <p>Personalized nutrition guidance for healthier habits, better choices and a life that feels good.</p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Success</span>
+</div>
+
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/home2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NutriCare pre-consultation nutrition and wellness assessment."
+    >
+
+    <meta
+        name="author"
+        content="NutriCare"
+    >
+
+    <title>NutriCare | Health Assessment</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         LUCIDE
+    ====================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+
+    <!-- =====================================================
+         PAGE CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/assessment.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SCROLL PROGRESS
+========================================================= -->
+
+<div
+    class="scroll-progress"
+    id="scrollProgress"
+></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header
+    class="site-header"
+    id="siteHeader"
+>
+
+    <div class="container header-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="../index.html"
+            class="brand"
+        >
+
+            <span class="brand-mark">
+
+                <i data-lucide="leaf"></i>
+
+            </span>
+
+            <span class="brand-name">
+
+                Nutri<span>Care</span>
+
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav
+            class="desktop-nav"
+            aria-label="Primary Navigation"
+        >
+
+            <a
+                href="../index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="home2.html"
+                class="nav-link"
+            >
+                Home 2
+            </a>
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="services.html"
+                class="nav-link"
+            >
+                Services
+            </a>
+
+            <a
+                href="blog.html"
+                class="nav-link"
+            >
+                Blog
+            </a>
+
+            <a
+                href="contact.html"
+                class="nav-link"
+            >
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+
+            <!-- THEME -->
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- RTL -->
+
+            <button
+                class="rtl-toggle"
+                id="rtlToggle"
+                aria-label="Toggle RTL"
+            >
+
+                <span class="rtl-label">
+                    RTL
+                </span>
+
+            </button>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile-wrapper">
+
+                <button
+                    class="profile-btn"
+                    id="profileButton"
+                    aria-label="Account menu"
+                >
+
+                    <i data-lucide="user-round"></i>
+
+                </button>
+
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                >
+
+                    <div class="profile-dropdown-head">
+
+                        <div class="profile-avatar">
+
+                            <i data-lucide="user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Welcome to NutriCare
+                            </strong>
+
+                            <span>
+                                Start your wellness journey
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="login.html">
+
+                        <i data-lucide="log-in"></i>
+
+                        Login
+
+                    </a>
+
+
+                    <a href="signup.html">
+
+                        <i data-lucide="user-plus"></i>
+
+                        Create Account
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE -->
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <div
+        class="mobile-nav"
+        id="mobileNav"
+    >
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="home2.html">
+            Home 2
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+        <div class="mobile-nav-divider"></div>
+
+
+        <a href="login.html">
+
+            <i data-lucide="log-in"></i>
+
+            Login
+
+        </a>
+
+
+        <a href="signup.html">
+
+            <i data-lucide="user-plus"></i>
+
+            Sign Up
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     ASSESSMENT HERO
+========================================================= -->
+
+<section class="assessment-hero">
+
+    <div class="assessment-orb orb-one"></div>
+
+    <div class="assessment-orb orb-two"></div>
+
+
+    <div class="container">
+
+        <div class="assessment-hero-inner reveal">
+
+
+            <span class="section-label">
+                FIND YOUR STARTING POINT
+            </span>
+
+
+            <h1>
+
+                What does your body
+
+                <em>
+                    need right now?
+                </em>
+
+            </h1>
+
+
+            <p>
+
+                Take our quick pre-consultation assessment and
+                share your goals, food preferences, activity level
+                and lifestyle.
+
+            </p>
+
+
+            <div class="assessment-meta">
+
+                <span>
+
+                    <i data-lucide="clock-3"></i>
+
+                    About 2 minutes
+
+                </span>
+
+
+                <span>
+
+                    <i data-lucide="sparkles"></i>
+
+                    Personalized questions
+
+                </span>
+
+
+                <span>
+
+                    <i data-lucide="clipboard-check"></i>
+
+                    Consultation-ready profile
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ASSESSMENT AREA
+========================================================= -->
+
+<section class="assessment-main section">
+
+    <div class="container assessment-layout">
+
+
+        <!-- =================================================
+             LEFT SIDEBAR
+        ================================================== -->
+
+        <aside class="assessment-sidebar reveal">
+
+
+            <div class="progress-card">
+
+                <div class="progress-top">
+
+                    <span>
+                        Your progress
+                    </span>
+
+                    <strong id="progressText">
+                        1 of 7
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-track">
+
+                    <span
+                        id="progressBar"
+                        style="width: 14.28%;"
+                    ></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="assessment-steps">
+
+
+                <button
+                    class="assessment-step active"
+                    data-step="1"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        01
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            About You
+                        </strong>
+
+                        <small>
+                            Basic details
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="2"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Your Goal
+                        </strong>
+
+                        <small>
+                            What you want
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="3"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        03
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Food Habits
+                        </strong>
+
+                        <small>
+                            Your preferences
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="4"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        04
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Activity
+                        </strong>
+
+                        <small>
+                            Daily movement
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="5"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        05
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Lifestyle
+                        </strong>
+
+                        <small>
+                            Sleep & routine
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="6"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        06
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Preferences
+                        </strong>
+
+                        <small>
+                            What suits you
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="assessment-step"
+                    data-step="7"
+                    type="button"
+                >
+
+                    <span class="step-number">
+                        07
+                    </span>
+
+                    <span class="step-info">
+
+                        <strong>
+                            Review
+                        </strong>
+
+                        <small>
+                            Your answers
+                        </small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div class="sidebar-note">
+
+                <i data-lucide="shield-check"></i>
+
+                <div>
+
+                    <strong>
+                        Your answers stay private
+                    </strong>
+
+                    <p>
+                        This assessment is used to understand
+                        your nutrition needs before consultation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             FORM
+        ================================================== -->
+
+        <div class="assessment-form-card reveal">
+
+
+            <form
+                id="assessmentForm"
+                novalidate
+            >
+
+
+                <!-- =========================================
+                     STEP 1
+                ========================================== -->
+
+                <div
+                    class="assessment-panel active"
+                    data-panel="1"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 01
+                        </span>
+
+                        <h2>
+                            Tell us a little about you.
+                        </h2>
+
+                        <p>
+                            These basic details help us understand
+                            your starting point.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-field">
+
+                            <label for="fullName">
+                                Full name
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="fullNameError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="email">
+                                Email address
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="emailError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="age">
+                                Age
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                min="13"
+                                max="100"
+                                placeholder="e.g. 28"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="ageError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="female">
+                                    Female
+                                </option>
+
+                                <option value="male">
+                                    Male
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                                <option value="prefer-not">
+                                    Prefer not to say
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field full">
+
+                            <label for="occupation">
+                                Occupation / daily routine
+                            </label>
+
+                            <input
+                                type="text"
+                                id="occupation"
+                                name="occupation"
+                                placeholder="e.g. Software professional, student, homemaker"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 2
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="2"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 02
+                        </span>
+
+                        <h2>
+                            What would you like to work on?
+                        </h2>
+
+                        <p>
+                            Select the goal that feels most relevant
+                            to you right now.
+                        </p>
+
+                    </div>
+
+
+                    <div class="choice-grid">
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="weight-management"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="scale"></i>
+                                </span>
+
+                                <strong>
+                                    Weight Management
+                                </strong>
+
+                                <small>
+                                    Build sustainable eating habits
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="muscle-building"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="dumbbell"></i>
+                                </span>
+
+                                <strong>
+                                    Strength & Muscle
+                                </strong>
+
+                                <small>
+                                    Support a strength-focused routine
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="performance"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="zap"></i>
+                                </span>
+
+                                <strong>
+                                    Performance
+                                </strong>
+
+                                <small>
+                                    Organize nutrition around training
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="wellness"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="heart-pulse"></i>
+                                </span>
+
+                                <strong>
+                                    Everyday Wellness
+                                </strong>
+
+                                <small>
+                                    Improve everyday nutrition habits
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="family"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="users"></i>
+                                </span>
+
+                                <strong>
+                                    Family Nutrition
+                                </strong>
+
+                                <small>
+                                    Make family meal planning easier
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice-card">
+
+                            <input
+                                type="radio"
+                                name="goal"
+                                value="meal-planning"
+                            >
+
+                            <span class="choice-content">
+
+                                <span class="choice-icon">
+                                    <i data-lucide="calendar-days"></i>
+                                </span>
+
+                                <strong>
+                                    Meal Planning
+                                </strong>
+
+                                <small>
+                                    Create a practical weekly structure
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <small
+                        class="field-error"
+                        id="goalError"
+                    ></small>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 3
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="3"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 03
+                        </span>
+
+                        <h2>
+                            Tell us about your food habits.
+                        </h2>
+
+                        <p>
+                            There is no right or wrong answer.
+                            Choose what best describes you.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-field full">
+
+                            <label>
+                                How would you describe your eating pattern?
+                            </label>
+
+                            <div class="inline-options">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="dietPattern"
+                                        value="vegetarian"
+                                    >
+                                    <span>
+                                        Vegetarian
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="dietPattern"
+                                        value="non-vegetarian"
+                                    >
+                                    <span>
+                                        Non-vegetarian
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="dietPattern"
+                                        value="vegan"
+                                    >
+                                    <span>
+                                        Vegan
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="dietPattern"
+                                        value="flexible"
+                                    >
+                                    <span>
+                                        Flexible
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field full">
+
+                            <label>
+                                How many meals do you usually have?
+                            </label>
+
+                            <div class="number-options">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="mealFrequency"
+                                        value="2"
+                                    >
+                                    <span>
+                                        2
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="mealFrequency"
+                                        value="3"
+                                    >
+                                    <span>
+                                        3
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="mealFrequency"
+                                        value="4"
+                                    >
+                                    <span>
+                                        4
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="mealFrequency"
+                                        value="5+"
+                                    >
+                                    <span>
+                                        5+
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field full">
+
+                            <label for="foodPreferences">
+                                Foods you enjoy or prefer
+                            </label>
+
+                            <textarea
+                                id="foodPreferences"
+                                name="foodPreferences"
+                                rows="4"
+                                placeholder="Tell us about foods you enjoy, cuisines you prefer, or foods you commonly eat..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-field full">
+
+                            <label for="foodAvoid">
+                                Foods you avoid or dislike
+                            </label>
+
+                            <textarea
+                                id="foodAvoid"
+                                name="foodAvoid"
+                                rows="3"
+                                placeholder="Optional"
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 4
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="4"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 04
+                        </span>
+
+                        <h2>
+                            How active is your day?
+                        </h2>
+
+                        <p>
+                            Your activity level helps us understand
+                            your everyday routine.
+                        </p>
+
+                    </div>
+
+
+                    <div class="activity-options">
+
+
+                        <label class="activity-card">
+
+                            <input
+                                type="radio"
+                                name="activity"
+                                value="low"
+                            >
+
+                            <span>
+
+                                <strong>
+                                    Mostly sedentary
+                                </strong>
+
+                                <small>
+                                    Mostly sitting with little planned exercise
+                                </small>
+
+                            </span>
+
+                            <i data-lucide="armchair"></i>
+
+                        </label>
+
+
+                        <label class="activity-card">
+
+                            <input
+                                type="radio"
+                                name="activity"
+                                value="light"
+                            >
+
+                            <span>
+
+                                <strong>
+                                    Lightly active
+                                </strong>
+
+                                <small>
+                                    Walking or light activity during the week
+                                </small>
+
+                            </span>
+
+                            <i data-lucide="footprints"></i>
+
+                        </label>
+
+
+                        <label class="activity-card">
+
+                            <input
+                                type="radio"
+                                name="activity"
+                                value="moderate"
+                            >
+
+                            <span>
+
+                                <strong>
+                                    Moderately active
+                                </strong>
+
+                                <small>
+                                    Regular exercise or active daily routine
+                                </small>
+
+                            </span>
+
+                            <i data-lucide="bike"></i>
+
+                        </label>
+
+
+                        <label class="activity-card">
+
+                            <input
+                                type="radio"
+                                name="activity"
+                                value="high"
+                            >
+
+                            <span>
+
+                                <strong>
+                                    Highly active
+                                </strong>
+
+                                <small>
+                                    Frequent training or physically active work
+                                </small>
+
+                            </span>
+
+                            <i data-lucide="activity"></i>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-field activity-extra">
+
+                        <label for="exerciseFrequency">
+                            Planned exercise per week
+                        </label>
+
+                        <select
+                            id="exerciseFrequency"
+                            name="exerciseFrequency"
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="none">
+                                None
+                            </option>
+
+                            <option value="1-2">
+                                1–2 sessions
+                            </option>
+
+                            <option value="3-4">
+                                3–4 sessions
+                            </option>
+
+                            <option value="5+">
+                                5+ sessions
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <small
+                        class="field-error"
+                        id="activityError"
+                    ></small>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 5
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="5"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 05
+                        </span>
+
+                        <h2>
+                            Let's understand your lifestyle.
+                        </h2>
+
+                        <p>
+                            Everyday habits can influence how practical
+                            a nutrition routine feels.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-field">
+
+                            <label for="sleep">
+                                Typical sleep
+                            </label>
+
+                            <select
+                                id="sleep"
+                                name="sleep"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="less-than-5">
+                                    Less than 5 hours
+                                </option>
+
+                                <option value="5-6">
+                                    5–6 hours
+                                </option>
+
+                                <option value="6-7">
+                                    6–7 hours
+                                </option>
+
+                                <option value="7-8">
+                                    7–8 hours
+                                </option>
+
+                                <option value="8-plus">
+                                    8+ hours
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="water">
+                                Daily water intake
+                            </label>
+
+                            <select
+                                id="water"
+                                name="water"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="less-than-1">
+                                    Less than 1 litre
+                                </option>
+
+                                <option value="1-2">
+                                    1–2 litres
+                                </option>
+
+                                <option value="2-3">
+                                    2–3 litres
+                                </option>
+
+                                <option value="3-plus">
+                                    3+ litres
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="stress">
+                                Typical stress level
+                            </label>
+
+                            <select
+                                id="stress"
+                                name="stress"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="low">
+                                    Low
+                                </option>
+
+                                <option value="moderate">
+                                    Moderate
+                                </option>
+
+                                <option value="high">
+                                    High
+                                </option>
+
+                                <option value="very-high">
+                                    Very high
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="routine">
+                                Meal routine
+                            </label>
+
+                            <select
+                                id="routine"
+                                name="routine"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="regular">
+                                    Mostly regular
+                                </option>
+
+                                <option value="sometimes-irregular">
+                                    Sometimes irregular
+                                </option>
+
+                                <option value="irregular">
+                                    Often irregular
+                                </option>
+
+                                <option value="very-irregular">
+                                    Very irregular
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field full">
+
+                            <label for="lifestyleNotes">
+                                Anything else about your lifestyle?
+                            </label>
+
+                            <textarea
+                                id="lifestyleNotes"
+                                name="lifestyleNotes"
+                                rows="4"
+                                placeholder="Work schedule, travel, family routine, cooking time, etc."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 6
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="6"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 06
+                        </span>
+
+                        <h2>
+                            What kind of support would help you?
+                        </h2>
+
+                        <p>
+                            Choose the type of guidance that sounds
+                            most useful for your routine.
+                        </p>
+
+                    </div>
+
+
+                    <div class="support-grid">
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="meal-plan"
+                            >
+
+                            <span>
+
+                                <i data-lucide="calendar-days"></i>
+
+                                <strong>
+                                    Personalized meal plans
+                                </strong>
+
+                                <small>
+                                    A practical weekly structure
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="recipes"
+                            >
+
+                            <span>
+
+                                <i data-lucide="book-open"></i>
+
+                                <strong>
+                                    Recipe ideas
+                                </strong>
+
+                                <small>
+                                    More practical meal inspiration
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="grocery"
+                            >
+
+                            <span>
+
+                                <i data-lucide="shopping-basket"></i>
+
+                                <strong>
+                                    Grocery guidance
+                                </strong>
+
+                                <small>
+                                    Easier weekly shopping
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="habit"
+                            >
+
+                            <span>
+
+                                <i data-lucide="repeat"></i>
+
+                                <strong>
+                                    Habit coaching
+                                </strong>
+
+                                <small>
+                                    Build practical routines
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="performance"
+                            >
+
+                            <span>
+
+                                <i data-lucide="zap"></i>
+
+                                <strong>
+                                    Performance nutrition
+                                </strong>
+
+                                <small>
+                                    Support around training
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="support-card">
+
+                            <input
+                                type="checkbox"
+                                name="support"
+                                value="family"
+                            >
+
+                            <span>
+
+                                <i data-lucide="users"></i>
+
+                                <strong>
+                                    Family meal planning
+                                </strong>
+
+                                <small>
+                                    Practical household planning
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STEP 7
+                ========================================== -->
+
+                <div
+                    class="assessment-panel"
+                    data-panel="7"
+                >
+
+                    <div class="panel-heading">
+
+                        <span class="panel-kicker">
+                            STEP 07
+                        </span>
+
+                        <h2>
+                            Review your assessment.
+                        </h2>
+
+                        <p>
+                            Check your answers before completing
+                            your pre-consultation profile.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="review-list"
+                        id="reviewList"
+                    >
+
+                    </div>
+
+
+                    <div class="consent-box">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="assessmentConsent"
+                                name="assessmentConsent"
+                            >
+
+                            <span>
+
+                                I understand that this assessment is
+                                for pre-consultation information and
+                                does not replace professional medical
+                                advice.
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <small
+                        class="field-error"
+                        id="consentError"
+                    ></small>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     FORM NAVIGATION
+                ========================================== -->
+
+                <div class="form-navigation">
+
+
+                    <button
+                        type="button"
+                        class="btn btn-back"
+                        id="prevStep"
+                    >
+
+                        <i data-lucide="arrow-left"></i>
+
+                        Back
+
+                    </button>
+
+
+                    <span
+                        class="navigation-note"
+                        id="navigationNote"
+                    >
+                        Your progress is saved in this session.
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="nextStep"
+                    >
+
+                        Continue
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                        id="submitAssessment"
+                    >
+
+                        Complete Assessment
+
+                        <i data-lucide="check"></i>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SUCCESS
+========================================================= -->
+
+<section
+    class="assessment-success"
+    id="assessmentSuccess"
+>
+
+    <div class="container">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+
+                <i data-lucide="check"></i>
+
+            </div>
+
+
+            <span class="section-label">
+                ASSESSMENT COMPLETE
+            </span>
+
+
+            <h2>
+
+                Your starting point
+
+                <em>
+                    is ready.
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Thank you for sharing your information.
+                Your responses can help structure your
+                upcoming nutrition conversation.
+
+            </p>
+
+
+            <div class="success-actions">
+
+                <a
+                    href="booking.html"
+                    class="btn btn-primary"
+                >
+
+                    Book Consultation
+
+                    <i data-lucide="arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="services.html"
+                    class="btn btn-outline"
+                >
+
+                    Explore Services
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="brand footer-logo"
+                >
+
+                    <span class="brand-mark">
+                        <i data-lucide="leaf"></i>
+                    </span>
+
+                    <span class="brand-name">
+                        Nutri<span>Care</span>
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Personalized nutrition guidance for healthier
+                    habits, better choices and a life that feels good.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="dietitians.html">
+                    Dietitians
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Resources
+                </h4>
+
+                <a href="meal-plans.html">
+                    Meal Plans
+                </a>
+
+                <a href="recipes.html">
+                    Recipes
+                </a>
+
+                <a href="assessment.html">
+                    Health Assessment
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="booking.html">
+                    Book Consultation
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="mailto:hello@nutricare.com">
+                    hello@nutricare.com
+                </a>
+
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+
+                <span>
+                    Chennai, India
+                </span>
+
+                <span>
+                    Mon – Sat · 9:00 AM – 6:00 PM
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NutriCare. All rights reserved.
+            </span>
+
+            <div>
+
+                <a href="privacy-policy.html">
+                    Privacy
+                </a>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+>
+
+    <i data-lucide="arrow-up"></i>
+
+</button>
+
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+
+    <i data-lucide="check-circle"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="../assets/js/main.js"></script>
+
+<script src="../assets/js/assessment.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NutriCare | Contact Us</title>
+
+    <meta
+        name="description"
+        content="Get in touch with NutriCare for personalized nutrition guidance, consultations and wellness support."
+    >
+
+    <meta name="author" content="NutriCare">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     HEADER — EXACT SAME AS HOME 2
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                aria-label="Toggle theme"
+                title="Toggle theme"
+            >
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button
+                class="rtl-toggle"
+                id="rtlToggle"
+                aria-label="Toggle RTL"
+            >
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+
+                <button
+                    class="profile-btn"
+                    id="profileButton"
+                    aria-label="Account menu"
+                >
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                >
+
+                    <div class="profile-dropdown-head">
+
+                        <div class="profile-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+
+                    </div>
+
+                    <a href="login.html">
+                        <i data-lucide="log-in"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html">
+                        <i data-lucide="user-plus"></i>
+                        Create Account
+                    </a>
+
+                </div>
+
+            </div>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="mobile-nav-divider"></div>
+
+        <a href="login.html">
+            <i data-lucide="log-in"></i>
+            Login
+        </a>
+
+        <a href="signup.html">
+            <i data-lucide="user-plus"></i>
+            Sign Up
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     CONTACT HERO
+========================================================= -->
+
+<section class="contact-hero">
+
+    <div class="container contact-hero-inner">
+
+        <div class="contact-hero-copy reveal">
+
+            <span class="section-label">
+                Let's Talk Nutrition
+            </span>
+
+            <h1>
+                Your next healthier
+                chapter starts here.
+            </h1>
+
+            <p>
+                Have a question about our programs, consultations or
+                personalized nutrition plans? Our team is here to help
+                you find the right path forward.
+            </p>
+
+            <div class="contact-hero-points">
+
+                <div>
+                    <span class="contact-point-icon">
+                        <i data-lucide="message-circle"></i>
+                    </span>
+                    <span>
+                        Friendly guidance
+                        <small>No confusing nutrition jargon.</small>
+                    </span>
+                </div>
+
+                <div>
+                    <span class="contact-point-icon">
+                        <i data-lucide="clock-3"></i>
+                    </span>
+                    <span>
+                        Quick response
+                        <small>We'll get back within one business day.</small>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-hero-visual reveal">
+
+            <div class="contact-image-wrap">
+
+                <img
+                    src="/assets/images/contactHero.jpg"
+                    alt="Healthy nutritious meal"
+                >
+
+                <div class="contact-floating-card">
+
+                    <span class="contact-floating-icon">
+                        <i data-lucide="heart-pulse"></i>
+                    </span>
+
+                    <div>
+                        <strong>Wellness starts</strong>
+                        <span>with one conversation.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT INFORMATION
+========================================================= -->
+
+<section class="contact-info-section section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">
+                Reach NutriCare
+            </span>
+
+            <h2>
+                We're just a message away.
+            </h2>
+
+            <p>
+                Choose the easiest way to connect with our nutrition
+                team and we'll guide you from there.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info-grid">
+
+            <a
+                href="mailto:hello@nutricare.com"
+                class="contact-info-card reveal"
+            >
+
+                <div class="contact-info-icon">
+                    <i data-lucide="mail"></i>
+                </div>
+
+                <div>
+                    <span>Email us</span>
+                    <h3>hello@nutricare.com</h3>
+                    <p>For general questions and program enquiries.</p>
+                </div>
+
+                <i
+                    class="contact-card-arrow"
+                    data-lucide="arrow-up-right"
+                ></i>
+
+            </a>
+
+
+            <a
+                href="tel:+919876543210"
+                class="contact-info-card reveal"
+            >
+
+                <div class="contact-info-icon">
+                    <i data-lucide="phone"></i>
+                </div>
+
+                <div>
+                    <span>Call us</span>
+                    <h3>+91 98765 43210</h3>
+                    <p>Mon – Sat · 9:00 AM – 6:00 PM</p>
+                </div>
+
+                <i
+                    class="contact-card-arrow"
+                    data-lucide="arrow-up-right"
+                ></i>
+
+            </a>
+
+
+            <div class="contact-info-card reveal">
+
+                <div class="contact-info-icon">
+                    <i data-lucide="map-pin"></i>
+                </div>
+
+                <div>
+                    <span>Visit us</span>
+                    <h3>Chennai, India</h3>
+                    <p>Nutrition consultations by appointment.</p>
+                </div>
+
+                <i
+                    class="contact-card-arrow"
+                    data-lucide="arrow-up-right"
+                ></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT FORM + HELP
+========================================================= -->
+
+<section class="contact-form-section section">
+
+    <div class="container">
+
+        <div class="contact-form-layout">
+
+
+            <!-- FORM -->
+            <div class="contact-form-card reveal">
+
+                <div class="form-heading">
+
+                    <span class="section-label">
+                        Send a Message
+                    </span>
+
+                    <h2>
+                        Tell us what you need.
+                    </h2>
+
+                    <p>
+                        Fill out the form and our team will help you
+                        understand the next best step.
+                    </p>
+
+                </div>
+
+
+                <form id="contactForm" novalidate>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="contactName">
+                                Full name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                            <small
+                                class="field-error"
+                                id="contactNameError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactEmail">
+                                Email address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small
+                                class="field-error"
+                                id="contactEmailError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="contactPhone">
+                                Phone number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contactPhone"
+                                name="phone"
+                                placeholder="+91 98765 43210"
+                                autocomplete="tel"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="contactPhoneError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactTopic">
+                                What can we help with?
+                            </label>
+
+                            <select
+                                id="contactTopic"
+                                name="topic"
+                                required
+                            >
+                                <option value="">
+                                    Select a topic
+                                </option>
+
+                                <option value="consultation">
+                                    Book a consultation
+                                </option>
+
+                                <option value="weight">
+                                    Weight management
+                                </option>
+
+                                <option value="sports">
+                                    Sports nutrition
+                                </option>
+
+                                <option value="family">
+                                    Family nutrition
+                                </option>
+
+                                <option value="general">
+                                    General enquiry
+                                </option>
+                            </select>
+
+                            <small
+                                class="field-error"
+                                id="contactTopicError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <div class="message-label-row">
+
+                            <label for="contactMessage">
+                                Your message
+                            </label>
+
+                            <span id="messageCounter">
+                                0 / 500
+                            </span>
+
+                        </div>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Tell us a little about what you're looking for..."
+                            required
+                        ></textarea>
+
+                        <small
+                            class="field-error"
+                            id="contactMessageError"
+                        ></small>
+
+                    </div>
+
+
+                    <label class="privacy-check">
+
+                        <input
+                            type="checkbox"
+                            id="contactConsent"
+                            name="consent"
+                        >
+
+                        <span>
+                            I agree to be contacted by NutriCare regarding
+                            my enquiry.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary contact-submit"
+                    >
+                        Send message
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
+
+                    <p class="form-note">
+                        We respect your privacy and never sell your
+                        personal information.
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <!-- SIDE CONTENT -->
+            <aside class="contact-side reveal">
+
+                <div class="contact-side-card">
+
+                    <span class="section-label">
+                        Before You Message
+                    </span>
+
+                    <h3>
+                        Not sure where to start?
+                    </h3>
+
+                    <p>
+                        Explore our programs and resources first,
+                        then contact us if you still have questions.
+                    </p>
+
+
+                    <div class="contact-side-links">
+
+                        <a href="services.html">
+
+                            <span>
+                                <i data-lucide="sparkles"></i>
+                            </span>
+
+                            <div>
+                                <strong>Explore Services</strong>
+                                <small>
+                                    Find a program that fits your goals.
+                                </small>
+                            </div>
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+
+                        <a href="blog.html">
+
+                            <span>
+                                <i data-lucide="book-open"></i>
+                            </span>
+
+                            <div>
+                                <strong>Read Our Blog</strong>
+                                <small>
+                                    Practical nutrition tips and guides.
+                                </small>
+                            </div>
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+
+                        <a href="faq.html">
+
+                            <span>
+                                <i data-lucide="circle-help"></i>
+                            </span>
+
+                            <div>
+                                <strong>Visit FAQ</strong>
+                                <small>
+                                    Quick answers to common questions.
+                                </small>
+                            </div>
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-hours-card">
+
+                    <div class="contact-hours-icon">
+                        <i data-lucide="calendar-clock"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Consultation hours</span>
+
+                        <strong>
+                            Monday – Saturday
+                        </strong>
+
+                        <p>
+                            9:00 AM – 6:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LOCATION / GOOGLE MAP
+========================================================= -->
+
+<section class="contact-location section">
+
+    <div class="container">
+
+        <div class="location-card reveal">
+
+            <div class="location-content">
+
+                <span class="section-label">
+                    Find NutriCare
+                </span>
+
+                <h2>
+                    Nutrition support,
+                    wherever you are.
+                </h2>
+
+                <p>
+                    Our primary team is based in Chennai, with
+                    consultations designed to fit both in-person
+                    and online wellness journeys.
+                </p>
+
+                <div class="location-detail">
+
+                    <i data-lucide="map-pin"></i>
+
+                    <div>
+                        <strong>NutriCare Wellness Studio</strong>
+                        <span>Chennai, Tamil Nadu, India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 GOOGLE MAP
+            ================================================== -->
+
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu,India&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="NutriCare location in Chennai"
+                ></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="final-cta section">
+
+    <div class="container">
+
+        <div class="cta-card reveal">
+
+            <div class="cta-decoration decoration-one"></div>
+            <div class="cta-decoration decoration-two"></div>
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    Your Health, Your Pace
+                </span>
+
+                <h2>
+                    Ready to make your next
+                    nutrition decision easier?
+                </h2>
+
+                <p>
+                    Start with a simple conversation and discover
+                    a nutrition plan built around your real life.
+                </p>
+
+                <a
+                    href="assessment.html"
+                    class="btn btn-primary"
+                >
+                    Start Your Assessment
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER — EXACT SAME AS HOME 2
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="brand footer-logo"
+                >
+                    <span class="brand-mark">
+                        <i data-lucide="leaf"></i>
+                    </span>
+
+                    <span class="brand-name">
+                        Nutri<span>Care</span>
+                    </span>
+                </a>
+
+                <p>
+                    Personalized nutrition guidance for healthier
+                    habits, better choices and a life that feels good.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Resources</h4>
+
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <a href="mailto:hello@nutricare.com">
+                    hello@nutricare.com
+                </a>
+
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+
+                <span>Chennai, India</span>
+
+                <span>
+                    Mon – Sat · 9:00 AM – 6:00 PM
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NutriCare. All rights reserved.
+            </span>
+
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+>
+    <i data-lucide="arrow-up"></i>
+</button>
+
+
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Success</span>
+</div>
+
+
+<!-- Shared JS -->
+<script src="../assets/js/main.js"></script>
+
+<!-- Contact JS -->
+<script src="../assets/js/contact.js"></script>
+
+</body>
+</html>

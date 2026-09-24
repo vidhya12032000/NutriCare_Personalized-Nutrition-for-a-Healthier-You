@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriCare | Service Details</title>
+    <meta name="description" content="Explore a personalized NutriCare nutrition program and see what the service includes.">
+    <meta name="author" content="NutriCare">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/service-details.css">
+</head>
+
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-nav-divider"></div>
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+</header>
+
+<main>
+    <section class="details-hero">
+        <div class="details-orb orb-one"></div>
+        <div class="details-orb orb-two"></div>
+
+        <div class="container">
+            <div class="details-hero-grid">
+                <div class="details-hero-content reveal">
+                    <a href="services.html" class="back-link">
+                        <i data-lucide="arrow-left"></i>
+                        Back to services
+                    </a>
+
+                    <span class="section-label" id="serviceCategory">WEIGHT MANAGEMENT</span>
+
+                    <h1 id="serviceTitle">
+                        Sustainable Weight Management
+                    </h1>
+
+                    <p id="serviceDescription">
+                        Build healthier eating patterns with practical guidance,
+                        personalized meal strategies and ongoing support.
+                    </p>
+
+                    <div class="details-hero-actions">
+                        <a href="assessment.html" class="btn btn-primary">
+                            Start your assessment
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="contact.html" class="details-text-link">
+                            Talk to our team
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="details-trust-row">
+                        <div>
+                            <i data-lucide="shield-check"></i>
+                            <span>Personalized guidance</span>
+                        </div>
+                        <div>
+                            <i data-lucide="calendar-check"></i>
+                            <span>Progress-based support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-hero-visual reveal">
+                    <div class="hero-image-frame">
+                        <img id="serviceImage"
+                             src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=88"
+                             alt="Healthy nutrition meal">
+                    </div>
+                    <div class="floating-stat">
+                        <span class="floating-stat-icon"><i data-lucide="sparkles"></i></span>
+                        <div>
+                            <strong id="serviceBadge">Personalized by design</strong>
+                            <span>Built around your routine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-grid reveal">
+                <div class="overview-card">
+                    <span><i data-lucide="clipboard-check"></i></span>
+                    <strong>Assessment</strong>
+                    <small>Understand your goals and routine</small>
+                </div>
+                <div class="overview-card">
+                    <span><i data-lucide="notebook-pen"></i></span>
+                    <strong>Personalized plan</strong>
+                    <small>Practical guidance for your lifestyle</small>
+                </div>
+                <div class="overview-card">
+                    <span><i data-lucide="message-circle"></i></span>
+                    <strong>Ongoing support</strong>
+                    <small>Review progress and adjust as needed</small>
+                </div>
+                <div class="overview-card">
+                    <span><i data-lucide="monitor-check"></i></span>
+                    <strong>Progress reviews</strong>
+                    <small>Keep your approach realistic</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-about section">
+        <div class="container">
+            <div class="details-two-column">
+                <div class="section-heading reveal">
+                    <span class="section-label">What You Get</span>
+                    <h2 id="whatTitle">A practical plan that fits real life.</h2>
+                    <p id="whatDescription">
+                        Your service is structured around clear goals, realistic habits
+                        and guidance you can use in everyday life.
+                    </p>
+                </div>
+
+                <div class="benefit-list reveal" id="benefitList"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus-section section">
+        <div class="container">
+            <div class="section-heading centered reveal">
+                <span class="section-label">Your Focus Areas</span>
+                <h2>Small details can shape a better routine.</h2>
+                <p id="focusIntro">
+                    We turn broad nutrition goals into practical areas you can work on.
+                </p>
+            </div>
+
+            <div class="focus-grid" id="focusGrid"></div>
+        </div>
+    </section>
+
+    <section class="details-process section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">How It Works</span>
+                <h2>Simple steps. Meaningful progress.</h2>
+                <p>Start with where you are, build a realistic plan, then review and adjust.</p>
+            </div>
+
+            <div class="detail-process-grid" id="processGrid"></div>
+        </div>
+    </section>
+
+    <section class="who-section section">
+        <div class="container">
+            <div class="who-card reveal">
+                <div class="who-content">
+                    <span class="section-label">Is This For You?</span>
+                    <h2 id="whoTitle">Support for your current nutrition goal.</h2>
+                    <p id="whoDescription">
+                        This service can be adapted to different routines, preferences and starting points.
+                    </p>
+                </div>
+                <div class="who-list" id="whoList"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-faq section">
+        <div class="container">
+            <div class="faq-layout">
+                <div class="faq-intro reveal">
+                    <span class="section-label">Before You Start</span>
+                    <h2>Questions about this program?</h2>
+                    <p>Here are some common questions to help you understand the service.</p>
+                    <a href="contact.html" class="text-link">
+                        Ask our team
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="faq-list reveal" id="detailsFaq"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-cta section">
+        <div class="container">
+            <div class="details-cta-card reveal">
+                <div class="cta-decoration cta-one"></div>
+                <div class="cta-decoration cta-two"></div>
+
+                <div class="cta-content">
+                    <span class="section-label">Ready When You Are</span>
+                    <h2 id="ctaTitle">Start with a plan built around you.</h2>
+                    <p id="ctaDescription">
+                        Take the short assessment or speak with the NutriCare team about your goals.
+                    </p>
+
+                    <div class="cta-actions">
+                        <a href="assessment.html" class="btn btn-primary">
+                            Take the assessment
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="services.html" class="cta-back">
+                            Explore other services
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+                <p>Personalized nutrition guidance for healthier habits, better choices and a life that feels good.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Success</span>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/service-details.js"></script>
+</body>
+</html>
