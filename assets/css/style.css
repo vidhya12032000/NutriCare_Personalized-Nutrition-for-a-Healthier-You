@@ -883,6 +883,25 @@ ul {
 }
 
 
+.btn-dark {
+    color: #ffffff;
+    background: #12231e;
+}
+
+html.dark .btn-dark {
+    background: var(--primary);   /* dark bg-la theriya */
+}
+
+.btn-light {
+    color: #12231e;
+    background: #ffffff;
+    box-shadow: var(--shadow-sm);
+}
+
+.newsletter-form input {
+    color: #12231e;              /* dark mode-la input text light aagama */
+}
+
 /* =========================================================
    HERO TRUST
 ========================================================= */

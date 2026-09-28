@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation | NutriCare</title>
+    <meta name="description" content="Book a nutrition consultation with a NutriCare dietitian in a few simple steps.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/booking.css">
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+<header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="mobile-nav-divider"></div>
+
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     PAGE HERO
+========================================================= -->
+<section class="page-hero">
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <span>Book Consultation</span>
+        </nav>
+
+        <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            BOOK A CONSULTATION
+        </div>
+
+        <h1>Your first step to <span>better nutrition.</span></h1>
+
+        <p>Choose a service, pick your dietitian and reserve a time that suits you. It takes less than 3 minutes.</p>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     BOOKING
+========================================================= -->
+<section class="booking-section">
+    <div class="container booking-layout">
+
+        <!-- ===== FORM CARD ===== -->
+        <div class="booking-card" id="bookingCard">
+
+            <!-- Stepper -->
+            <ol class="stepper" id="stepper">
+                <li class="step-item active" data-step-indicator="1">
+                    <span class="step-dot">1</span>
+                    <span class="step-text">Service</span>
+                </li>
+                <li class="step-item" data-step-indicator="2">
+                    <span class="step-dot">2</span>
+                    <span class="step-text">Dietitian</span>
+                </li>
+                <li class="step-item" data-step-indicator="3">
+                    <span class="step-dot">3</span>
+                    <span class="step-text">Date &amp; Time</span>
+                </li>
+                <li class="step-item" data-step-indicator="4">
+                    <span class="step-dot">4</span>
+                    <span class="step-text">Details</span>
+                </li>
+            </ol>
+
+            <form id="bookingForm" novalidate>
+
+                <!-- STEP 1 -->
+                <div class="form-step active" data-step="1">
+
+                    <h2>What do you need help with?</h2>
+                    <p class="step-sub">Select the service that best matches your goals.</p>
+
+                    <div class="choice-grid">
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Personalized Diet Plans">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="clipboard-heart"></i></span>
+                                <span>
+                                    <strong>Personalized Diet Plans</strong>
+                                    <small>Plan built around your routine</small>
+                                </span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Weight Management">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="scale"></i></span>
+                                <span>
+                                    <strong>Weight Management</strong>
+                                    <small>Sustainable habits, no crash diets</small>
+                                </span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Sports Nutrition">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="dumbbell"></i></span>
+                                <span>
+                                    <strong>Sports Nutrition</strong>
+                                    <small>Training, recovery, performance</small>
+                                </span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Lifestyle Nutrition">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="apple"></i></span>
+                                <span>
+                                    <strong>Lifestyle Nutrition</strong>
+                                    <small>Simple guidance for busy days</small>
+                                </span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Clinical Nutrition">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="activity"></i></span>
+                                <span>
+                                    <strong>Clinical Nutrition</strong>
+                                    <small>Support alongside medical care</small>
+                                </span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="service" value="Family Nutrition">
+                            <span class="choice-body">
+                                <span class="choice-icon"><i data-lucide="users"></i></span>
+                                <span>
+                                    <strong>Family Nutrition</strong>
+                                    <small>Healthy habits for the whole family</small>
+                                </span>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <h3 class="sub-title">How would you like to consult?</h3>
+
+                    <div class="choice-grid three">
+
+                        <label class="choice-card">
+                            <input type="radio" name="mode" value="Video Call">
+                            <span class="choice-body compact">
+                                <span class="choice-icon"><i data-lucide="video"></i></span>
+                                <strong>Video Call</strong>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="mode" value="Phone Call">
+                            <span class="choice-body compact">
+                                <span class="choice-icon"><i data-lucide="phone"></i></span>
+                                <strong>Phone Call</strong>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="mode" value="In-Clinic (Chennai)">
+                            <span class="choice-body compact">
+                                <span class="choice-icon"><i data-lucide="map-pin"></i></span>
+                                <strong>In-Clinic</strong>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+                <div class="form-step" data-step="2">
+
+                    <h2>Choose your dietitian</h2>
+                    <p class="step-sub">Pick an expert, or let us match you with the best fit.</p>
+
+                    <div class="dietitian-choices">
+
+                        <label class="choice-card">
+                            <input type="radio" name="dietitian" value="Dr. Ananya Sharma">
+                            <span class="choice-body person">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&q=80" alt="Dr. Ananya Sharma">
+                                <span class="person-info">
+                                    <strong>Dr. Ananya Sharma</strong>
+                                    <small>Clinical Nutritionist</small>
+                                </span>
+                                <span class="rating">★ 4.9</span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="dietitian" value="Dr. Maya Patel">
+                            <span class="choice-body person">
+                                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80" alt="Dr. Maya Patel">
+                                <span class="person-info">
+                                    <strong>Dr. Maya Patel</strong>
+                                    <small>Sports Nutritionist</small>
+                                </span>
+                                <span class="rating">★ 4.8</span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="dietitian" value="Dr. Arjun Mehta">
+                            <span class="choice-body person">
+                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80" alt="Dr. Arjun Mehta">
+                                <span class="person-info">
+                                    <strong>Dr. Arjun Mehta</strong>
+                                    <small>Lifestyle Nutritionist</small>
+                                </span>
+                                <span class="rating">★ 4.9</span>
+                            </span>
+                        </label>
+
+                        <label class="choice-card">
+                            <input type="radio" name="dietitian" value="Best available match">
+                            <span class="choice-body person">
+                                <span class="choice-icon large"><i data-lucide="sparkles"></i></span>
+                                <span class="person-info">
+                                    <strong>No preference</strong>
+                                    <small>We'll match you with the best available expert</small>
+                                </span>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+                <div class="form-step" data-step="3">
+
+                    <h2>Pick a date &amp; time</h2>
+                    <p class="step-sub">Consultations are available Monday to Saturday, 9:00 AM – 6:00 PM (IST).</p>
+
+                    <h3 class="sub-title first">Select a date</h3>
+                    <div class="date-strip" id="dateStrip" role="radiogroup" aria-label="Select a date"></div>
+
+                    <h3 class="sub-title">Select a time slot</h3>
+                    <div class="slot-grid" id="slotGrid" role="radiogroup" aria-label="Select a time slot">
+                        <p class="slot-hint">Please select a date first.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+                <div class="form-step" data-step="4">
+
+                    <h2>Your details</h2>
+                    <p class="step-sub">We'll use these to confirm your appointment.</p>
+
+                    <div class="field-grid">
+
+                        <div class="field">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name">
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+                        </div>
+
+                        <div class="field">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="1" max="120" placeholder="e.g. 28">
+                        </div>
+
+                        <div class="field full">
+                            <label for="goal">Your goals or health concerns <span>(optional)</span></label>
+                            <textarea id="goal" name="goal" rows="4" placeholder="Tell us a little about what you'd like to achieve, any allergies or dietary preferences..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <label class="check-row">
+                        <input type="checkbox" id="terms">
+                        <span>I agree to the <a href="terms.html">Terms</a> and <a href="privacy-policy.html">Privacy Policy</a>.</span>
+                    </label>
+
+                </div>
+
+
+                <!-- ACTIONS -->
+                <div class="form-actions">
+
+                    <button type="button" class="btn btn-outline" id="prevBtn" hidden>
+                        <i data-lucide="arrow-left"></i>
+                        Back
+                    </button>
+
+                    <button type="button" class="btn btn-primary" id="nextBtn">
+                        Continue
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn" hidden>
+                        Confirm Booking
+                        <i data-lucide="check"></i>
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- SUCCESS -->
+            <div class="booking-success" id="bookingSuccess" hidden>
+
+                <div class="success-icon"><i data-lucide="check"></i></div>
+
+                <h2>Your consultation is booked!</h2>
+
+                <p>Thank you, <strong id="successName"></strong>. A confirmation will be sent to <strong id="successEmail"></strong>.</p>
+
+                <div class="success-ref">
+                    Booking reference
+                    <strong id="successRef"></strong>
+                </div>
+
+                <div class="success-actions">
+                    <a href="../index.html" class="btn btn-primary">
+                        Back to Home
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                    <button type="button" class="btn btn-outline" id="newBooking">Book Another</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===== SUMMARY ===== -->
+        <aside class="booking-aside">
+
+            <div class="summary-card">
+
+                <h3>Booking summary</h3>
+
+                <ul class="summary-list">
+                    <li>
+                        <i data-lucide="clipboard-heart"></i>
+                        <div><small>Service</small><strong id="sumService">Not selected</strong></div>
+                    </li>
+                    <li>
+                        <i data-lucide="video"></i>
+                        <div><small>Mode</small><strong id="sumMode">Not selected</strong></div>
+                    </li>
+                    <li>
+                        <i data-lucide="user-round"></i>
+                        <div><small>Dietitian</small><strong id="sumDietitian">Not selected</strong></div>
+                    </li>
+                    <li>
+                        <i data-lucide="calendar-days"></i>
+                        <div><small>Date</small><strong id="sumDate">Not selected</strong></div>
+                    </li>
+                    <li>
+                        <i data-lucide="clock-3"></i>
+                        <div><small>Time</small><strong id="sumTime">Not selected</strong></div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="expect-card">
+
+                <h3>What to expect</h3>
+
+                <div class="expect-item">
+                    <i data-lucide="check"></i>
+                    <span>A 30–45 minute one-to-one session</span>
+                </div>
+                <div class="expect-item">
+                    <i data-lucide="check"></i>
+                    <span>Review of your goals, habits and preferences</span>
+                </div>
+                <div class="expect-item">
+                    <i data-lucide="check"></i>
+                    <span>Practical next steps you can start right away</span>
+                </div>
+                <div class="expect-item">
+                    <i data-lucide="check"></i>
+                    <span>Free rescheduling up to 24 hours before</span>
+                </div>
+
+                <a href="assessment.html" class="text-link">
+                    Take the health assessment first
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+
+                <p>
+                    Personalized nutrition guidance for healthier
+                    habits, better choices and a life that feels good.
+                </p>
+
+             <div class="social-links">
+
+    <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+    </a>
+
+</div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Success</span>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/booking.js"></script>
+
+</body>
+</html>

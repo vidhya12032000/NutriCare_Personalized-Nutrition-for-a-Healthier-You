@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How to Build a Balanced Plate | NutriCare Journal</title>
+
+    <meta name="description" content="A simple approach to combine vegetables, protein, carbohydrates and healthy fats into meals that fit your everyday routine.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SAME GLOBAL CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- BLOG DETAILS CSS -->
+    <link rel="stylesheet" href="../assets/css/blog-details.css">
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+
+                </div>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-nav-divider"></div>
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     ARTICLE HERO
+========================================================= -->
+
+<section class="post-hero">
+
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="container post-hero-inner">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <a href="blog.html">Blog</a>
+            <i data-lucide="chevron-right"></i>
+            <span>Balanced Plate</span>
+        </nav>
+
+        <a href="blog.html" class="post-category">Nutrition</a>
+
+        <h1>How to build a balanced plate <em>without overthinking</em> every meal</h1>
+
+        <p class="post-lead">
+            A healthy meal doesn't need to be complicated. Here is a simple,
+            flexible way to put together meals that fit your everyday routine.
+        </p>
+
+        <div class="post-meta">
+
+            <div class="post-author">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=120&q=80" alt="Dr. Ananya Sharma">
+                <div>
+                    <strong>Dr. Ananya Sharma</strong>
+                    <span>Clinical Nutritionist</span>
+                </div>
+            </div>
+
+            <span class="meta-item"><i data-lucide="calendar-days"></i> Sep 18, 2026</span>
+            <span class="meta-item"><i data-lucide="clock-3"></i> <span id="readingTime">6 min read</span></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COVER IMAGE
+========================================================= -->
+
+<section class="post-cover">
+    <div class="container">
+        <figure class="cover-frame reveal">
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1600&q=85"
+                alt="A colourful balanced meal bowl"
+            >
+        </figure>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ARTICLE LAYOUT
+========================================================= -->
+
+<section class="post-section">
+
+    <div class="container post-layout">
+
+
+        <!-- SHARE RAIL -->
+        <aside class="share-rail" aria-label="Share and save">
+
+            <button type="button" class="rail-btn" id="likeBtn" aria-label="Like this article" title="Like">
+                <i data-lucide="heart"></i>
+                <span id="likeCount">128</span>
+            </button>
+
+            <button type="button" class="rail-btn" id="saveBtn" aria-label="Save this article" title="Save">
+                <i data-lucide="bookmark"></i>
+            </button>
+
+            <span class="rail-line"></span>
+
+            <button type="button" class="rail-btn" data-share="facebook" aria-label="Share on Facebook" title="Facebook">
+                <i data-lucide="network"></i>
+            </button>
+
+            <button type="button" class="rail-btn" data-share="linkedin" aria-label="Share on LinkedIn" title="LinkedIn">
+                <i data-lucide="contact"></i>
+            </button>
+
+            <button type="button" class="rail-btn" data-share="whatsapp" aria-label="Share on WhatsApp" title="WhatsApp">
+                <i data-lucide="message-circle"></i>
+            </button>
+
+            <button type="button" class="rail-btn" data-share="copy" aria-label="Copy link" title="Copy link">
+                <i data-lucide="link"></i>
+            </button>
+
+        </aside>
+
+
+        <!-- ARTICLE -->
+        <article class="post-content" id="postContent">
+
+            <p>
+                Most of us have been there: standing in the kitchen, trying to work out
+                whether a meal is "healthy enough". The good news is that you don't need
+                calorie counters or strict rules. A simple visual guide can do most of the
+                work for you.
+            </p>
+
+            <h2 id="the-basic-idea">The basic idea: think in proportions</h2>
+
+            <p>
+                Instead of tracking numbers, picture your plate. A balanced plate is
+                built from four parts, and the proportions matter more than perfection.
+            </p>
+
+            <!-- Plate visual -->
+            <div class="plate-card">
+
+                <div class="plate-visual" aria-hidden="true">
+                    <div class="plate-slice veg"><span>Veg</span></div>
+                    <div class="plate-slice protein"><span>Protein</span></div>
+                    <div class="plate-slice carbs"><span>Carbs</span></div>
+                    <div class="plate-slice fats"><span>Fats</span></div>
+                </div>
+
+                <ul class="plate-legend">
+                    <li><i class="dot veg"></i><div><strong>About half: vegetables &amp; fruit</strong><span>Colourful, fibre-rich and filling.</span></div></li>
+                    <li><i class="dot protein"></i><div><strong>About a quarter: protein</strong><span>Dal, eggs, paneer, fish, chicken, tofu.</span></div></li>
+                    <li><i class="dot carbs"></i><div><strong>About a quarter: whole carbs</strong><span>Brown rice, millets, whole wheat, oats.</span></div></li>
+                    <li><i class="dot fats"></i><div><strong>A small portion: healthy fats</strong><span>Nuts, seeds, olive or groundnut oil.</span></div></li>
+                </ul>
+
+            </div>
+
+            <h2 id="start-with-vegetables">Start with vegetables</h2>
+
+            <p>
+                Fill the largest part of your plate with vegetables first. They add
+                volume, fibre, vitamins and minerals without making a meal heavy. Aim
+                for a mix of colours across the day rather than trying to fit every
+                colour into one meal.
+            </p>
+
+            <blockquote>
+                Progress in nutrition rarely comes from perfect meals. It comes from
+                good-enough meals repeated consistently.
+            </blockquote>
+
+            <h2 id="choose-your-protein">Choose a protein you enjoy</h2>
+
+            <p>
+                Protein helps you feel satisfied and supports muscle and recovery.
+                You don't need supplements to get enough for most everyday needs.
+                Try to include a source at every main meal:
+            </p>
+
+            <ul>
+                <li>Lentils, chickpeas, rajma and other pulses</li>
+                <li>Eggs, fish and lean poultry</li>
+                <li>Paneer, curd, milk and tofu</li>
+                <li>Nuts and seeds as toppings or snacks</li>
+            </ul>
+
+            <figure class="inline-figure">
+                <img
+                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80"
+                    alt="A protein-rich healthy breakfast"
+                    loading="lazy"
+                >
+                <figcaption>A simple breakfast plate with protein, whole grains and fruit.</figcaption>
+            </figure>
+
+            <h2 id="pick-smart-carbs">Pick smarter carbohydrates</h2>
+
+            <p>
+                Carbohydrates are not the enemy. They are your body's main fuel.
+                Choosing whole or minimally processed options, such as millets, brown
+                rice, whole wheat and oats, adds fibre and helps energy stay steady
+                for longer.
+            </p>
+
+            <div class="callout">
+                <div class="callout-icon"><i data-lucide="lightbulb"></i></div>
+                <div>
+                    <strong>Quick tip</strong>
+                    <p>Swap only one refined item at a time, for example white rice for a
+                    millet mix at dinner. Small swaps are easier to keep.</p>
+                </div>
+            </div>
+
+            <h2 id="dont-forget-fats">Don't forget healthy fats</h2>
+
+            <p>
+                A small amount of healthy fat improves taste and helps your body absorb
+                fat-soluble vitamins. A handful of nuts, a spoon of seeds or a drizzle
+                of good-quality oil is usually enough.
+            </p>
+
+            <h2 id="make-it-easy">Make it work for real life</h2>
+
+            <p>
+                A balanced plate is a guide, not a rule. Some meals will lean more toward
+                carbs, others toward protein, and that's completely normal. Look at your
+                week as a whole:
+            </p>
+
+            <ol>
+                <li>Prep vegetables and pulses in bulk once or twice a week.</li>
+                <li>Keep quick protein options ready, such as boiled eggs or sprouts.</li>
+                <li>Plan two or three go-to meals that you actually enjoy.</li>
+                <li>Drink water regularly through the day.</li>
+            </ol>
+
+            <p>
+                If you have a medical condition, food allergies or specific goals, a
+                personalised plan from a qualified dietitian will always be more accurate
+                than a general guide like this one.
+            </p>
+
+            <!-- Tags -->
+            <div class="post-tags">
+                <span>Tags:</span>
+                <a href="blog.html">Balanced Diet</a>
+                <a href="blog.html">Healthy Eating</a>
+                <a href="blog.html">Meal Planning</a>
+                <a href="blog.html">Nutrition</a>
+            </div>
+
+        </article>
+
+
+        <!-- SIDEBAR -->
+        <aside class="post-sidebar">
+
+            <!-- TOC -->
+            <div class="side-card toc-card">
+                <h3><i data-lucide="list"></i> In this article</h3>
+                <ul class="toc-list" id="tocList"></ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="side-card">
+                <h3><i data-lucide="mail"></i> Weekly nutrition notes</h3>
+                <p class="side-text">Practical tips and simple recipes, straight to your inbox.</p>
+
+                <form class="side-form" id="sideNewsletter" novalidate>
+                    <label class="sr-only" for="sideEmail">Email address</label>
+                    <input type="email" id="sideEmail" placeholder="Your email address">
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Consultation CTA -->
+            <div class="side-card side-cta">
+                <div class="side-cta-icon"><i data-lucide="stethoscope"></i></div>
+                <h3>Need a plan made for you?</h3>
+                <p>Talk to a verified dietitian about your goals.</p>
+                <a href="booking.html" class="btn btn-primary">
+                    Book a Consultation
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AUTHOR BOX
+========================================================= -->
+
+<section class="author-section">
+    <div class="container">
+
+        <div class="author-box reveal">
+
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=85" alt="Dr. Ananya Sharma">
+
+            <div>
+                <span class="mini-label">Written by</span>
+                <h3>Dr. Ananya Sharma</h3>
+                <span class="author-role">Clinical Nutritionist · NutriCare</span>
+                <p>
+                    Ananya helps people build realistic eating habits with a focus on
+                    clinical nutrition and sustainable weight management.
+                </p>
+                <a href="dietitian-details.html" class="text-link">
+                    View profile
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Prev / Next -->
+        <div class="post-nav reveal">
+
+            <a href="blog-details.html" class="post-nav-link prev">
+                <span><i data-lucide="arrow-left"></i> Previous article</span>
+                <strong>Understanding protein and why your body needs it</strong>
+            </a>
+
+            <a href="blog-details.html" class="post-nav-link next">
+                <span>Next article <i data-lucide="arrow-right"></i></span>
+                <strong>7 healthy vegetarian breakfast ideas for busy mornings</strong>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     COMMENTS
+========================================================= -->
+
+<section class="comments-section">
+    <div class="container comments-wrap">
+
+        <div class="comments-head reveal">
+            <span class="section-label">DISCUSSION</span>
+            <h2>Comments <span id="commentCount">(2)</span></h2>
+        </div>
+
+        <div class="comment-list" id="commentList">
+
+            <div class="comment">
+                <div class="comment-avatar">R</div>
+                <div class="comment-body">
+                    <div class="comment-top">
+                        <strong>Rahul M.</strong>
+                        <span>2 days ago</span>
+                    </div>
+                    <p>Really practical. The plate visual made it so much easier to plan my dinners.</p>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar">P</div>
+                <div class="comment-body">
+                    <div class="comment-top">
+                        <strong>Priya R.</strong>
+                        <span>4 days ago</span>
+                    </div>
+                    <p>Loved the millet swap tip. Starting with one meal really does help.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <form class="comment-form reveal" id="commentForm" novalidate>
+
+            <h3>Leave a comment</h3>
+
+            <div class="comment-grid">
+
+                <div class="field">
+                    <label for="commentName">Name</label>
+                    <input type="text" id="commentName" placeholder="Your name">
+                </div>
+
+                <div class="field">
+                    <label for="commentEmail">Email</label>
+                    <input type="email" id="commentEmail" placeholder="you@example.com">
+                </div>
+
+                <div class="field full">
+                    <label for="commentText">Comment</label>
+                    <textarea id="commentText" rows="4" placeholder="Share your thoughts..."></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Post Comment
+                <i data-lucide="send"></i>
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     RELATED
+========================================================= -->
+
+<section class="related-section">
+    <div class="container">
+
+        <div class="related-head reveal">
+
+            <div>
+                <span class="section-label">KEEP READING</span>
+                <h2>Related <em>articles</em></h2>
+            </div>
+
+            <a href="blog.html" class="text-link">
+                All articles
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+        <div class="related-grid">
+
+            <article class="related-card reveal">
+                <a href="blog-details.html" class="related-image">
+                    <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80" alt="Protein rich food" loading="lazy">
+                    <span>Nutrition</span>
+                </a>
+                <div class="related-body">
+                    <div class="related-meta">5 min read · Sep 15, 2026</div>
+                    <h3><a href="blog-details.html">Understanding protein and why your body needs it</a></h3>
+                </div>
+            </article>
+
+            <article class="related-card reveal">
+                <a href="blog-details.html" class="related-image">
+                    <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=800&q=80" alt="Meal preparation" loading="lazy">
+                    <span>Healthy Living</span>
+                </a>
+                <div class="related-body">
+                    <div class="related-meta">5 min read · Aug 30, 2026</div>
+                    <h3><a href="blog-details.html">How to eat healthy with a busy schedule</a></h3>
+                </div>
+            </article>
+
+            <article class="related-card reveal">
+                <a href="blog-details.html" class="related-image">
+                    <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=800&q=80" alt="Drinking water" loading="lazy">
+                    <span>Wellness</span>
+                </a>
+                <div class="related-body">
+                    <div class="related-meta">4 min read · Aug 26, 2026</div>
+                    <h3><a href="blog-details.html">6 hydration mistakes you should avoid</a></h3>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="details-cta">
+    <div class="container">
+
+        <div class="details-cta-card reveal">
+
+            <div>
+                <span class="section-label">READY TO GET STARTED?</span>
+                <h2>Turn nutrition knowledge into <em>real habits.</em></h2>
+            </div>
+
+            <div class="details-cta-actions">
+                <a href="assessment.html" class="btn btn-primary">
+                    Start Assessment
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="booking.html" class="text-link">
+                    Talk to a Dietitian
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+
+                <p>Personalized nutrition guidance for healthier habits, better choices and a life that feels good.</p>
+
+              <div class="social-links">
+
+    <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+    </a>
+
+</div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Done</span>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/blog-details.js"></script>
+
+</body>
+</html>

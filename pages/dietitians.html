@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Dietitians | NutriCare</title>
+
+    <meta name="description" content="Meet NutriCare's verified dietitians and nutritionists. Filter by specialty, language and consultation mode, then book a session.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SAME GLOBAL CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- DIETITIANS PAGE CSS -->
+    <link rel="stylesheet" href="../assets/css/dietitians.css">
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark"><i data-lucide="leaf"></i></span>
+            <span class="brand-name">Nutri<span>Care</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                <span class="rtl-label">RTL</span>
+            </button>
+
+            <div class="profile-wrapper">
+
+                <button class="profile-btn" id="profileButton" aria-label="Account menu">
+                    <i data-lucide="user-round"></i>
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+
+                    <div class="profile-dropdown-head">
+                        <div class="profile-avatar"><i data-lucide="user"></i></div>
+                        <div>
+                            <strong>Welcome to NutriCare</strong>
+                            <span>Start your wellness journey</span>
+                        </div>
+                    </div>
+
+                    <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+                    <a href="signup.html"><i data-lucide="user-plus"></i> Create Account</a>
+
+                </div>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="home2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-nav-divider"></div>
+        <a href="login.html"><i data-lucide="log-in"></i> Login</a>
+        <a href="signup.html"><i data-lucide="user-plus"></i> Sign Up</a>
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="dt-hero">
+
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="container dt-hero-inner">
+
+        <nav class="dt-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <span>Dietitians</span>
+        </nav>
+
+        <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            MEET THE EXPERTS
+        </div>
+
+        <h1>Guidance from people <span>who care.</span></h1>
+
+        <p>
+            Every NutriCare dietitian is verified, experienced and focused on
+            realistic, sustainable nutrition. Find the right expert for your goals.
+        </p>
+
+        <div class="dt-hero-stats">
+            <div><strong>25+</strong><span>Verified experts</span></div>
+            <div><strong>4.9</strong><span>Average rating</span></div>
+            <div><strong>5K+</strong><span>Clients guided</span></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FILTERS
+========================================================= -->
+
+<section class="dt-controls" id="experts">
+
+    <div class="container">
+
+        <div class="dt-filter-card reveal">
+
+            <div class="dt-filter-row">
+
+                <div class="dt-search">
+                    <i data-lucide="search"></i>
+                    <input
+                        type="search"
+                        id="dtSearch"
+                        placeholder="Search by name, specialty or language..."
+                        aria-label="Search dietitians"
+                    >
+                    <button type="button" id="dtClear" aria-label="Clear search">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+
+                <div class="dt-select">
+                    <label class="sr-only" for="dtMode">Consultation mode</label>
+                    <select id="dtMode">
+                        <option value="all">Any mode</option>
+                        <option value="video">Video call</option>
+                        <option value="phone">Phone call</option>
+                        <option value="clinic">In-clinic (Chennai)</option>
+                    </select>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+
+                <div class="dt-select">
+                    <label class="sr-only" for="dtSort">Sort by</label>
+                    <select id="dtSort">
+                        <option value="rating">Top rated</option>
+                        <option value="experience">Most experienced</option>
+                        <option value="name">Name (A–Z)</option>
+                    </select>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+
+            </div>
+
+            <div class="dt-chip-row">
+
+                <div class="dt-chips" id="dtCategories" role="group" aria-label="Filter by specialty">
+                    <button type="button" class="dt-chip active" data-category="all">All</button>
+                    <button type="button" class="dt-chip" data-category="clinical">Clinical</button>
+                    <button type="button" class="dt-chip" data-category="weight">Weight Management</button>
+                    <button type="button" class="dt-chip" data-category="sports">Sports</button>
+                    <button type="button" class="dt-chip" data-category="lifestyle">Lifestyle</button>
+                    <button type="button" class="dt-chip" data-category="family">Family</button>
+                    <button type="button" class="dt-chip" data-category="diabetes">Diabetes Care</button>
+                </div>
+
+                <label class="dt-toggle">
+                    <input type="checkbox" id="dtAvailable">
+                    <span class="dt-toggle-track"></span>
+                    <span>Available this week</span>
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="dt-results-bar">
+            <p id="dtCount" aria-live="polite">Showing all experts</p>
+            <button type="button" class="dt-reset" id="dtReset" hidden>
+                <i data-lucide="rotate-ccw"></i>
+                Reset filters
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GRID
+========================================================= -->
+
+<section class="dt-grid-section">
+
+    <div class="container">
+
+        <div class="dt-grid" id="dtGrid"></div>
+
+        <!-- Empty state -->
+        <div class="dt-empty" id="dtEmpty" hidden>
+
+            <div class="dt-empty-icon"><i data-lucide="user-search"></i></div>
+
+            <h3>No dietitians match your search</h3>
+
+            <p>Try a different keyword, or clear some filters.</p>
+
+            <button type="button" class="btn btn-outline" id="dtEmptyReset">Reset filters</button>
+
+        </div>
+
+        <div class="dt-more" id="dtMoreWrap" hidden>
+            <button type="button" class="btn btn-outline" id="dtMore">
+                Load more experts
+                <i data-lucide="arrow-down"></i>
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW WE MATCH
+========================================================= -->
+
+<section class="dt-match">
+
+    <div class="container">
+
+        <div class="dt-match-head reveal">
+            <span class="section-label">NOT SURE WHO TO PICK?</span>
+            <h2>We'll help you find <em>the right fit.</em></h2>
+        </div>
+
+        <div class="dt-match-grid">
+
+            <div class="dt-match-card reveal">
+                <span class="dt-match-num">01</span>
+                <div class="dt-match-icon"><i data-lucide="clipboard-list"></i></div>
+                <h3>Share your goals</h3>
+                <p>Answer a short assessment about your lifestyle, preferences and health goals.</p>
+            </div>
+
+            <div class="dt-match-card reveal">
+                <span class="dt-match-num">02</span>
+                <div class="dt-match-icon"><i data-lucide="users-round"></i></div>
+                <h3>Get matched</h3>
+                <p>We suggest dietitians whose expertise fits your needs and language.</p>
+            </div>
+
+            <div class="dt-match-card reveal">
+                <span class="dt-match-num">03</span>
+                <div class="dt-match-icon"><i data-lucide="calendar-check"></i></div>
+                <h3>Book a session</h3>
+                <p>Choose a time that suits you and start your first consultation.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="dt-cta">
+
+    <div class="container">
+
+        <div class="dt-cta-card reveal">
+
+            <div>
+                <span class="section-label">YOUR HEALTHY CHAPTER STARTS HERE</span>
+                <h2>Ready to talk to <em>an expert?</em></h2>
+            </div>
+
+            <div class="dt-cta-actions">
+                <a href="booking.html" class="btn btn-primary">
+                    Book a Consultation
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="assessment.html" class="text-link">
+                    Take the assessment
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     QUICK VIEW MODAL
+========================================================= -->
+
+<div class="dt-modal" id="dtModal" aria-hidden="true">
+
+    <div class="dt-modal-backdrop" data-close></div>
+
+    <div class="dt-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="dtModalName">
+
+        <button type="button" class="dt-modal-close" data-close aria-label="Close">
+            <i data-lucide="x"></i>
+        </button>
+
+        <div class="dt-modal-body" id="dtModalBody"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="brand footer-logo">
+                    <span class="brand-mark"><i data-lucide="leaf"></i></span>
+                    <span class="brand-name">Nutri<span>Care</span></span>
+                </a>
+
+                <p>Personalized nutrition guidance for healthier habits, better choices and a life that feels good.</p>
+
+                <div class="social-links">
+
+    <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+    </a>
+
+</div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="dietitians.html">Dietitians</a>
+                <a href="blog.html">Blog</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="meal-plans.html">Meal Plans</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="assessment.html">Health Assessment</a>
+                <a href="faq.html">FAQ</a>
+                <a href="booking.html">Book Consultation</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nutricare.com">hello@nutricare.com</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <span>Chennai, India</span>
+                <span>Mon – Sat · 9:00 AM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 NutriCare. All rights reserved.</span>
+            <div>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMessage">Done</span>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/dietitians.js"></script>
+
+</body>
+</html>
