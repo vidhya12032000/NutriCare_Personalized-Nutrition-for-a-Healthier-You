@@ -262,6 +262,9 @@
     font-size: 2.5rem;
     line-height: 1;
 }
+.about-stat .counter{
+    font-size: 25px;
+}
 
 .about-stat span {
     font-size: 0.85rem;

@@ -1305,6 +1305,10 @@ html.dark .btn-dark {
    STATS
 ========================================================= */
 
+/* =========================================================
+   STATS
+========================================================= */
+
 .stats-section {
 
     position: relative;
@@ -1324,8 +1328,7 @@ html.dark .btn-dark {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
 }
@@ -1354,6 +1357,8 @@ html.dark .btn-dark {
     width: 42px;
     height: 42px;
 
+    flex-shrink: 0;
+
     display: grid;
     place-items: center;
 
@@ -1368,18 +1373,40 @@ html.dark .btn-dark {
     width: 19px;
 }
 
+/* Number + suffix stay on ONE line */
 .stat-item strong {
 
     display: block;
 
     color: var(--dark);
 
-    font-size: 23px;
+    font-size: 22px;
+
+    font-weight: 700;
 
     line-height: 1.1;
+
+    white-space: nowrap;
 }
 
-.stat-item > div:last-child span {
+/* The animated counter inherits the big number style */
+.stat-item .counter {
+
+    display: inline;
+
+    margin: 0;
+
+    color: inherit;
+
+    font-size: inherit;
+
+    font-weight: inherit;
+
+    line-height: inherit;
+}
+
+/* Only the direct label span is small and grey */
+.stat-item > div:last-child > span {
 
     display: block;
 
@@ -1387,9 +1414,8 @@ html.dark .btn-dark {
 
     color: var(--text-light);
 
-    font-size: 11px;
+    font-size: 12px;
 }
-
 
 /* =========================================================
    SECTION HEADINGS
